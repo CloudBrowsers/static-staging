@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="213.992" height="41.117" viewBox="0 0 213.992 41.117">
+  <g id="Group_491" data-name="Group 491" transform="translate(-141.008 -9.941)">
+    <g id="Logo" transform="translate(0 -2)">
+      <text id="CloudifyTests.io" transform="translate(184 40)" fill="#55d4ab" font-size="22" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Cloudify</tspan><tspan y="0" font-family="Poppins-Light, Poppins" font-weight="300">Tests.io</tspan></text>
+    </g>
+    <path id="Subtraction_65" data-name="Subtraction 65" d="M18.237,40.117a6.758,6.758,0,0,1-3.384-.91L3.388,32.57A6.782,6.782,0,0,1,0,26.693V13.422A6.788,6.788,0,0,1,3.388,7.544L14.852.91a6.753,6.753,0,0,1,6.771,0L33.09,7.544a6.8,6.8,0,0,1,3.388,5.878V26.693A6.792,6.792,0,0,1,33.09,32.57L21.623,39.207A6.768,6.768,0,0,1,18.237,40.117ZM8.785,15.737a5.64,5.64,0,1,0,3.563,10.006,1.112,1.112,0,0,0-.089-2.221A1.105,1.105,0,0,0,11.2,24.3a3.8,3.8,0,1,1,.457-5.394,7.2,7.2,0,0,1,.627-1.28,6.675,6.675,0,0,1,2.346-2.195A6.6,6.6,0,0,1,22.47,16.5a6.724,6.724,0,0,0-11.6-.36A5.589,5.589,0,0,0,8.785,15.737Zm15.941-.412-9.311,9.341,2.693,0,9.315-9.337-2.689,0,0,0,0,0h0l0,0Zm2.356,1.332,3.209,3.226-3.2,3.211h3.02l3.209-3.216L30.1,16.657Z" transform="translate(141.508 10.441)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>

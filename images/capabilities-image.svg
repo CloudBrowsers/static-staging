@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="462" height="281.625" viewBox="0 0 462 281.625">
+  <defs>
+    <filter id="Path_493" x="0" y="0" width="462" height="281.625" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#707070" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_500" data-name="Group 500" transform="translate(-689 -2414.625)">
+    <g transform="matrix(1, 0, 0, 1, 689, 2414.63)" filter="url(#Path_493)">
+      <path id="Path_493-2" data-name="Path 493" d="M5.781,0H438.219C441.412,0,444,1.862,444,4.158V259.467c0,2.3-2.588,4.158-5.781,4.158H5.781c-3.193,0-5.781-1.862-5.781-4.158V4.158C0,1.862,2.588,0,5.781,0Z" transform="translate(9 6)" fill="#11171a"/>
+    </g>
+    <text id="Lorem_sample_textsample_text_new_sample_textsample_text_sample_textsample_text._sample_text_chrome_sample_textsample_text._sample_text_58.0_sample_textsample_text_new_sample_text_URI.create_http:_localhost:4444_wd_hub_" data-name="Lorem sample textsample text = new sample textsample text ();
+sample textsample text. sample text (’’chrome’’);
+sample textsample text. sample text(’’58.0’’);
+
+sample textsample text = new sample text(
+          URI.create (’’http://localhost:4444/wd/hub’’" transform="translate(750.393 2473.197)" fill="#fff" font-size="9" font-family="ArialMT, Arial"><tspan x="0" y="0" fill="#b4b4b4">Lorem sample textsample text = </tspan><tspan y="0" fill="#eeae00">new</tspan><tspan y="0" fill="#787878"> </tspan><tspan y="0" fill="#fff">sample textsample text ()</tspan><tspan y="0" fill="#000">;</tspan><tspan x="0" y="10" fill="#fff">sample textsample text. sample text</tspan><tspan y="10" fill="#000"> </tspan><tspan y="10" fill="#00a500">(’’chrome’’)</tspan><tspan y="10" fill="#fff">;</tspan><tspan x="0" y="20" fill="#fff">sample textsample text. sample text(’’58.0’’)</tspan><tspan y="20" fill="#000">;</tspan><tspan fill="#787878"><tspan x="0" y="30"></tspan></tspan><tspan x="0" y="40" fill="#b4b4b4">sample textsample text =</tspan><tspan y="40" fill="#000"> </tspan><tspan y="40" fill="#eeae00">new</tspan><tspan y="40" fill="#787878"> </tspan><tspan y="40" fill="#fff">sample text(</tspan><tspan x="0" y="50" xml:space="preserve">          URI.create</tspan><tspan y="50" xml:space="preserve" fill="#00a500"> (’’http://localhost:4444/wd/hub’’)</tspan><tspan y="50">.toURL(),</tspan><tspan x="0" y="60">);</tspan></text>
+    <text id="Lorem_sample_textsample_text_new_sample_textsample_text_sample_textsample_text._sample_text_chrome_sample_textsample_text._sample_text_58.0_sample_textsample_text_new_sample_text_URI.create_http:_localhost:4444_wd_hub_2" data-name="Lorem sample textsample text = new sample textsample text ();
+sample textsample text. sample text (’’chrome’’);
+sample textsample text. sample text(’’58.0’’);
+
+sample textsample text = new sample text(
+          URI.create (’’http://localhost:4444/wd/hub’’" transform="translate(773.068 2567.656)" fill="#fff" font-size="9" font-family="ArialMT, Arial"><tspan x="0" y="0" fill="#b4b4b4">Lorem sample textsample text =</tspan><tspan y="0" fill="#000"> </tspan><tspan y="0" fill="#eeae00">new</tspan><tspan y="0" fill="#787878"> </tspan><tspan y="0" fill="#fff">sample textsample text ()</tspan><tspan y="0" fill="#000">;</tspan><tspan x="0" y="10" fill="#fff">sample textsample text. sample text</tspan><tspan y="10" fill="#000"> </tspan><tspan y="10" fill="#00a500">(’’chrome’’)</tspan><tspan y="10" fill="#fff">;</tspan><tspan x="0" y="20" fill="#fff">sample textsample text. sample text(’’58.0’’)</tspan><tspan y="20" fill="#000">;</tspan><tspan fill="#787878"><tspan x="0" y="30"></tspan></tspan><tspan x="0" y="40" fill="#b4b4b4">sample textsample text =</tspan><tspan y="40" fill="#000"> </tspan><tspan y="40" fill="#eeae00">new</tspan><tspan y="40" fill="#787878"> </tspan><tspan y="40" fill="#fff">sample text(</tspan><tspan x="0" y="50" xml:space="preserve">          URI.create</tspan><tspan y="50" xml:space="preserve" fill="#00a500"> (’’http://localhost:4444/wd/hub’’)</tspan><tspan y="50">.toURL(),</tspan><tspan x="0" y="60">);</tspan></text>
+    <g id="Group_118" data-name="Group 118" transform="translate(1093.752 2454.924)">
+      <rect id="Rectangle_90" data-name="Rectangle 90" width="39.549" height="15.819" transform="translate(-0.001 0)" fill="#263238"/>
+      <text id="Copy" transform="translate(16.6 7.691)" fill="#fff" font-size="4" font-family="ArialMT, Arial"><tspan x="-4.669" y="0">Copy</tspan></text>
+    </g>
+    <g id="Group_120" data-name="Group 120" transform="translate(706.701 2662.486)">
+      <rect id="Rectangle_90-2" data-name="Rectangle 90" width="52.732" height="15.819" transform="translate(0 -0.001)" fill="#263238"/>
+      <text id="Run_Manually_" data-name="Run Manually " transform="translate(7.368 9.41)" fill="#fff" font-size="6" font-family="ArialMT, Arial"><tspan x="0" y="0">Run Manually </tspan></text>
+    </g>
+    <path id="Path_297" data-name="Path 297" d="M0,0H39.549V15.819H0Z" transform="translate(746.266 2431.328)" fill="#11171a"/>
+    <text id="Java" transform="translate(763.938 2441.016)" fill="#fff" font-size="8" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-8.898" y="0">Java</tspan></text>
+    <g id="Rectangle_86" data-name="Rectangle 86" transform="translate(904.988 2431.328)" fill="#344767" stroke="#707070" stroke-width="0.25">
+      <rect width="39.549" height="15.819" stroke="none"/>
+      <rect x="0.125" y="0.125" width="39.299" height="15.569" fill="none"/>
+    </g>
+    <text id="Python" transform="translate(921.426 2441.016)" fill="#fff" font-size="8" font-family="ArialMT, Arial"><tspan x="-12.453" y="0">Python</tspan></text>
+    <g id="Rectangle_87" data-name="Rectangle 87" transform="translate(798.996 2431.328)" fill="#344767" stroke="#707070" stroke-width="0.25">
+      <rect width="39.549" height="15.819" stroke="none"/>
+      <rect x="0.125" y="0.125" width="39.299" height="15.569" fill="none"/>
+    </g>
+    <text id="PHP" transform="translate(817.652 2441.016)" fill="#fff" font-size="8" font-family="ArialMT, Arial"><tspan x="-8.225" y="0">PHP</tspan></text>
+    <g id="Rectangle_88" data-name="Rectangle 88" transform="translate(957.564 2431.328)" fill="#344767" stroke="#707070" stroke-width="0.25">
+      <rect width="39.549" height="15.819" stroke="none"/>
+      <rect x="0.125" y="0.125" width="39.299" height="15.569" fill="none"/>
+    </g>
+    <text id="C_" data-name="C#" transform="translate(977.564 2442.016)" fill="#fff" font-size="8" font-family="ArialMT, Arial"><tspan x="-5.113" y="0">C#</tspan></text>
+    <g id="Rectangle_89" data-name="Rectangle 89" transform="translate(851.729 2431.328)" fill="#344767" stroke="#707070" stroke-width="0.25">
+      <rect width="39.549" height="15.819" stroke="none"/>
+      <rect x="0.125" y="0.125" width="39.299" height="15.569" fill="none"/>
+    </g>
+    <text id="Ruby" transform="translate(870.328 2441.016)" fill="#fff" font-size="8" font-family="ArialMT, Arial"><tspan x="-9.338" y="0">Ruby</tspan></text>
+    <g id="Rectangle_90-3" data-name="Rectangle 90" transform="translate(1010.451 2431.328)" fill="#344767" stroke="#707070" stroke-width="0.25">
+      <rect width="39.549" height="15.819" stroke="none"/>
+      <rect x="0.125" y="0.125" width="39.299" height="15.569" fill="none"/>
+    </g>
+    <text id="Curl" transform="translate(1029.633 2441.016)" fill="#fff" font-size="8" font-family="ArialMT, Arial"><tspan x="-7.334" y="0">Curl</tspan></text>
+  </g>
+</svg>

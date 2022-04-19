@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="470" height="322" viewBox="0 0 470 322">
+  <defs>
+    <filter id="Rectangle_17690" x="0" y="0" width="470" height="322" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_216" x="33" y="42" width="406" height="269" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#707070" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_213" x="40" y="97" width="390" height="171" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.11"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#84c2ff"/>
+      <stop offset="1" stop-color="#2e87eb"/>
+    </linearGradient>
+    <filter id="Rectangle_213-2" x="40" y="255" width="136" height="42" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="0.98" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7fd183"/>
+      <stop offset="1" stop-color="#51ab55"/>
+    </linearGradient>
+    <filter id="Rectangle_214" x="166" y="255" width="138" height="42" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-3" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#666668"/>
+      <stop offset="1" stop-color="#1d1d1e"/>
+    </linearGradient>
+    <filter id="Rectangle_215" x="294" y="255" width="136" height="42" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-4" x1="-0.874" y1="0.457" x2="0.749" y2="0.463" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c4e0e5"/>
+      <stop offset="1" stop-color="#4ca1af"/>
+    </linearGradient>
+    <filter id="Rectangle_262" x="297" y="47" width="134" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-7"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-5" x1="-0.962" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bdc3c7"/>
+      <stop offset="1" stop-color="#2c3e50"/>
+    </linearGradient>
+    <filter id="Rectangle_263" x="171" y="47" width="134" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-8"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-6" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00cdac"/>
+      <stop offset="1" stop-color="#02aab0"/>
+    </linearGradient>
+    <filter id="Rectangle_261" x="40" y="47" width="135" height="62" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-9"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_273" x="350" y="100" width="65" height="28" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-10"/>
+      <feFlood flood-opacity="0.11"/>
+      <feComposite operator="in" in2="blur-10"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_495" data-name="Group 495" transform="translate(-672 -1682)">
+    <g transform="matrix(1, 0, 0, 1, 672, 1682)" filter="url(#Rectangle_17690)">
+      <rect id="Rectangle_17690-2" data-name="Rectangle 17690" width="452" height="304" rx="5" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <g id="Group_301" data-name="Group 301" transform="translate(-78 897.291)">
+      <rect id="Rectangle_195" data-name="Rectangle 195" width="436" height="86" transform="translate(767 802.709)" fill="#344767"/>
+      <g id="Group_300" data-name="Group 300" transform="translate(774.453 832.812)">
+        <rect id="Rectangle_17570" data-name="Rectangle 17570" width="422" height="212" transform="translate(-0.453 36.897)" fill="#f0f2f5"/>
+        <g transform="matrix(1, 0, 0, 1, -24.45, -48.1)" filter="url(#Rectangle_216)">
+          <rect id="Rectangle_216-2" data-name="Rectangle 216" width="388" height="251" rx="5" transform="translate(42 48)" fill="#fff"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -24.45, -48.1)" filter="url(#Rectangle_213)">
+          <rect id="Rectangle_213-3" data-name="Rectangle 213" width="372" height="153" rx="5" transform="translate(49 103)" fill="#fbfbfb"/>
+        </g>
+        <text id="Live_Resources" data-name="Live Resources" transform="translate(30.547 62.898)" font-size="6" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Live Resources</tspan></text>
+        <text id="Track_your_current_running_job_s_metrics" data-name="Track your current running job&apos;s metrics" transform="translate(30.547 67.898)" fill="#8f8f8f" font-size="2" font-family="ArialMT, Arial"><tspan x="0" y="0">Track your current running job&apos;s metrics</tspan></text>
+        <text id="_100_75_50_25_0" data-name="100
+
+
+75
+
+
+50
+
+
+25
+
+
+0" transform="translate(31.582 85.213)" font-size="2" font-family="ArialMT, Arial"><tspan x="-3.337" y="0">100</tspan><tspan x="0" y="4"></tspan><tspan x="0" y="8"></tspan><tspan x="-2.225" y="12">75</tspan><tspan x="0" y="16"></tspan><tspan x="0" y="20"></tspan><tspan x="-2.225" y="24">50</tspan><tspan x="0" y="28"></tspan><tspan x="0" y="32"></tspan><tspan x="-2.225" y="36">25</tspan><tspan x="0" y="40"></tspan><tspan x="0" y="44"></tspan><tspan x="-1.112" y="48">0</tspan></text>
+        <text id="_17.50" data-name="17.50" transform="translate(67.547 189.898)" font-size="3" font-family="ArialMT, Arial"><tspan x="0" y="0">17.50</tspan></text>
+        <text id="Default-CPU-allocated" transform="translate(149.547 201.898)" font-size="3" font-family="ArialMT, Arial"><tspan x="0" y="0">Default-CPU-allocated</tspan></text>
+        <text id="Default-CPU-utilized" transform="translate(247.547 201.898)" font-size="3" font-family="ArialMT, Arial"><tspan x="0" y="0">Default-CPU-utilized</tspan></text>
+        <text id="_17.50-2" data-name="17.50" transform="translate(115.547 189.898)" font-size="3" font-family="ArialMT, Arial"><tspan x="0" y="0">17.50</tspan></text>
+        <text id="_17.50-3" data-name="17.50" transform="translate(159.547 189.898)" font-size="3" font-family="ArialMT, Arial"><tspan x="0" y="0">17.50</tspan></text>
+        <text id="_17.50-4" data-name="17.50" transform="translate(203.547 189.898)" font-size="3" font-family="ArialMT, Arial"><tspan x="0" y="0">17.50</tspan></text>
+        <text id="_17.50-5" data-name="17.50" transform="translate(246.547 189.898)" font-size="3" font-family="ArialMT, Arial"><tspan x="0" y="0">17.50</tspan></text>
+        <text id="_17.50-6" data-name="17.50" transform="translate(292.547 189.898)" font-size="3" font-family="ArialMT, Arial"><tspan x="0" y="0">17.50</tspan></text>
+        <text id="_17.50-7" data-name="17.50" transform="translate(339.547 189.898)" font-size="3" font-family="ArialMT, Arial"><tspan x="0" y="0">17.50</tspan></text>
+        <text id="_17.50-8" data-name="17.50" transform="translate(381.547 189.898)" font-size="3" font-family="ArialMT, Arial"><tspan x="0" y="0">17.50</tspan></text>
+        <line id="Line_113" data-name="Line 113" x2="345.578" transform="translate(41.89 87.199)" fill="none" stroke="#e2e2e2" stroke-width="1"/>
+        <line id="Line_116" data-name="Line 116" x2="345.578" transform="translate(41.89 136.198)" fill="none" stroke="#e2e2e2" stroke-width="1"/>
+        <line id="Line_114" data-name="Line 114" x2="345.578" transform="translate(41.89 112.087)" fill="none" stroke="#e2e2e2" stroke-width="1"/>
+        <line id="Line_115" data-name="Line 115" x2="345.578" transform="translate(41.89 160.698)" fill="none" stroke="#e2e2e2" stroke-width="1"/>
+        <line id="Line_117" data-name="Line 117" x2="345.578" transform="translate(41.89 185.586)" fill="none" stroke="#e2e2e2" stroke-width="1"/>
+        <circle id="Ellipse_41" data-name="Ellipse 41" cx="0.5" cy="0.5" r="0.5" transform="translate(40.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_42" data-name="Ellipse 42" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(48.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_49" data-name="Ellipse 49" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(81.547 184.897)" fill="red"/>
+        <circle id="Ellipse_53" data-name="Ellipse 53" cx="1" cy="1" r="1" transform="translate(120.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_57" data-name="Ellipse 57" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(155.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_61" data-name="Ellipse 61" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(190.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_65" data-name="Ellipse 65" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(226.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_69" data-name="Ellipse 69" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(261.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_73" data-name="Ellipse 73" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(297.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_77" data-name="Ellipse 77" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(335.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_81" data-name="Ellipse 81" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(368.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_43" data-name="Ellipse 43" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(56.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_48" data-name="Ellipse 48" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(90.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_52" data-name="Ellipse 52" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(129.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_56" data-name="Ellipse 56" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(164.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_60" data-name="Ellipse 60" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(200.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_64" data-name="Ellipse 64" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(235.547 184.897)" fill="red"/>
+        <circle id="Ellipse_68" data-name="Ellipse 68" cx="1" cy="1" r="1" transform="translate(271.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_72" data-name="Ellipse 72" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(306.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_76" data-name="Ellipse 76" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(343.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_80" data-name="Ellipse 80" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(377.547 184.897)" fill="red"/>
+        <circle id="Ellipse_44" data-name="Ellipse 44" cx="1" cy="1" r="1" transform="translate(65.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_47" data-name="Ellipse 47" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(101.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_51" data-name="Ellipse 51" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(137.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_55" data-name="Ellipse 55" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(173.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_59" data-name="Ellipse 59" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(209.547 184.897)" fill="red"/>
+        <circle id="Ellipse_63" data-name="Ellipse 63" cx="0.5" cy="0.5" r="0.5" transform="translate(244.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_67" data-name="Ellipse 67" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(279.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_71" data-name="Ellipse 71" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(315.547 184.897)" fill="red"/>
+        <circle id="Ellipse_75" data-name="Ellipse 75" cx="1" cy="1" r="1" transform="translate(352.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_79" data-name="Ellipse 79" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(385.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_45" data-name="Ellipse 45" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(73.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_46" data-name="Ellipse 46" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(111.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_50" data-name="Ellipse 50" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(146.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_54" data-name="Ellipse 54" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(181.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_58" data-name="Ellipse 58" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(217.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_62" data-name="Ellipse 62" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(252.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_66" data-name="Ellipse 66" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(288.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_70" data-name="Ellipse 70" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(326.547 184.897)" fill="red"/>
+        <ellipse id="Ellipse_74" data-name="Ellipse 74" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(360.547 184.897)" fill="red"/>
+        <path id="Path_300" data-name="Path 300" d="M-7627-714.112l14.656-12.287h13.3l11.313-5.826h15.282l13.892-11.236,16.472-6.242L-7528-761.149l19.568,11.445,12.642,11.881,16.77,11.424,13.158,12.287" transform="translate(7723.29 896.177)" fill="none" stroke="#02acb0" stroke-width="1.5"/>
+        <ellipse id="Ellipse_82" data-name="Ellipse 82" cx="3.5" cy="3" rx="3.5" ry="3" transform="translate(237.547 198.897)" fill="red"/>
+        <ellipse id="Ellipse_83" data-name="Ellipse 83" cx="4.5" cy="4" rx="4.5" ry="4" transform="translate(138.547 197.897)" fill="#02adaf"/>
+        <circle id="Ellipse_84" data-name="Ellipse 84" cx="2" cy="2" r="2" transform="translate(107.547 167.897)" fill="#02acb0"/>
+        <ellipse id="Ellipse_85" data-name="Ellipse 85" cx="1.5" cy="2" rx="1.5" ry="2" transform="translate(121.547 167.897)" fill="#02acb0"/>
+        <ellipse id="Ellipse_86" data-name="Ellipse 86" cx="2" cy="2.5" rx="2" ry="2.5" transform="translate(132.547 161.897)" fill="#02acb0"/>
+        <ellipse id="Ellipse_87" data-name="Ellipse 87" cx="2" cy="2.5" rx="2" ry="2.5" transform="translate(149.547 161.897)" fill="#02acb0"/>
+        <circle id="Ellipse_88" data-name="Ellipse 88" cx="2" cy="2" r="2" transform="translate(162.547 150.897)" fill="#02acb0"/>
+        <ellipse id="Ellipse_89" data-name="Ellipse 89" cx="2.5" cy="2" rx="2.5" ry="2" transform="translate(179.547 143.897)" fill="#02acb0"/>
+        <circle id="Ellipse_90" data-name="Ellipse 90" cx="2" cy="2" r="2" transform="translate(193.547 132.897)" fill="#02acb0"/>
+        <circle id="Ellipse_91" data-name="Ellipse 91" cx="2" cy="2" r="2" transform="translate(213.547 144.897)" fill="#02acb0"/>
+        <ellipse id="Ellipse_92" data-name="Ellipse 92" cx="2.5" cy="2" rx="2.5" ry="2" transform="translate(225.547 156.897)" fill="#02acb0"/>
+        <circle id="Ellipse_93" data-name="Ellipse 93" cx="2" cy="2" r="2" transform="translate(242.547 167.897)" fill="#02acb0"/>
+        <g transform="matrix(1, 0, 0, 1, -24.45, -48.1)" filter="url(#Rectangle_213-2)">
+          <rect id="Rectangle_213-4" data-name="Rectangle 213" width="118" height="24" rx="5" transform="translate(49 261)" fill="url(#linear-gradient)"/>
+        </g>
+        <text id="Used" transform="translate(37.547 220.898)" fill="#fff" font-size="4" font-family="ArialMT, Arial"><tspan x="-4.669" y="0">Used</tspan></text>
+        <text id="_60" data-name="60" transform="translate(125.547 227.898)" fill="#fff" font-size="8" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-4.449" y="0">60</tspan></text>
+        <g transform="matrix(1, 0, 0, 1, -24.45, -48.1)" filter="url(#Rectangle_214)">
+          <rect id="Rectangle_214-2" data-name="Rectangle 214" width="120" height="24" rx="5" transform="translate(175 261)" fill="url(#linear-gradient-2)"/>
+        </g>
+        <text id="Queued" transform="translate(167.547 220.898)" fill="#fff" font-size="4" font-family="ArialMT, Arial"><tspan x="-7.117" y="0">Queued</tspan></text>
+        <text id="_0" data-name="0" transform="translate(256.547 225.898)" fill="#fff" font-size="7" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-1.947" y="0">0</tspan></text>
+        <g transform="matrix(1, 0, 0, 1, -24.45, -48.1)" filter="url(#Rectangle_215)">
+          <rect id="Rectangle_215-2" data-name="Rectangle 215" width="118" height="24" rx="5" transform="translate(303 261)" fill="url(#linear-gradient-3)"/>
+        </g>
+        <text id="Quota" transform="translate(292.547 220.898)" fill="#fff" font-size="4" font-family="ArialMT, Arial"><tspan x="-5.448" y="0">Quota</tspan></text>
+        <text id="_5_0_5" data-name="5 + 0/5" transform="translate(372.547 228.898)" fill="#fff" font-size="9" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-13.887" y="0">5 + 0/5</tspan></text>
+        <g transform="matrix(1, 0, 0, 1, -24.45, -48.1)" filter="url(#Rectangle_262)">
+          <rect id="Rectangle_262-2" data-name="Rectangle 262" width="116" height="43" rx="5" transform="translate(306 53)" fill="url(#linear-gradient-4)"/>
+        </g>
+        <text id="Memory" transform="translate(295.547 11.897)" fill="#fff" font-size="4" font-family="ArialMT, Arial"><tspan x="-7.223" y="0">Memory</tspan></text>
+        <text id="_10_95" data-name="10 / 95" transform="translate(340.547 29.897)" fill="#fff" font-size="9" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-13.761" y="0">10 / 95</tspan></text>
+        <g transform="matrix(1, 0, 0, 1, -24.45, -48.1)" filter="url(#Rectangle_263)">
+          <rect id="Rectangle_263-2" data-name="Rectangle 263" width="116" height="43" rx="5" transform="translate(180 53)" fill="url(#linear-gradient-5)"/>
+        </g>
+        <text id="Node" transform="translate(167.547 11.897)" fill="#fff" font-size="4" font-family="ArialMT, Arial"><tspan x="-4.781" y="0">Node</tspan></text>
+        <text id="_4" data-name="4" transform="translate(213.547 27.897)" fill="#fff" font-size="7" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-1.947" y="0">4</tspan></text>
+        <g transform="matrix(1, 0, 0, 1, -24.45, -48.1)" filter="url(#Rectangle_261)">
+          <rect id="Rectangle_261-2" data-name="Rectangle 261" width="117" height="44" rx="5" transform="translate(49 53)" fill="url(#linear-gradient-6)"/>
+        </g>
+        <text id="CPU" transform="translate(35.547 12.897)" fill="#fff" font-size="5" font-family="ArialMT, Arial"><tspan x="-5.278" y="0">CPU</tspan></text>
+        <text id="_0_24" data-name="0 / 24" transform="translate(81.547 28.897)" fill="#fff" font-size="8" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-10.008" y="0">0 / 24</tspan></text>
+        <g transform="matrix(1, 0, 0, 1, -24.45, -48.1)" filter="url(#Rectangle_273)">
+          <rect id="Rectangle_273-2" data-name="Rectangle 273" width="47" height="10" rx="5" transform="translate(359 106)" fill="#fff"/>
+        </g>
+        <text id="Metric:_CPU" data-name="Metric: CPU" transform="translate(345.547 63.898)" font-size="3" font-family="ArialMT, Arial"><tspan x="-8.084" y="0">Metric: CPU</tspan></text>
+        <g id="_92-Arrow_Right" data-name="92-Arrow Right" transform="translate(377.952 61.468) rotate(90)">
+          <path id="Path_37" data-name="Path 37" d="M.413,5.7,0,5.242,2.123,2.85,0,.462.41,0,2.737,2.621a.358.358,0,0,1,0,.462Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
