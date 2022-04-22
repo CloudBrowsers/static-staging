@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloudifytests.io</title>
-        <!--font-awesome-link-->
-        <link rel="stylesheet" type="text/css"
+    <!--font-awesome-link-->
+    <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!--google-font-link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +15,9 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,900&display=swap"
         rel="stylesheet">
     <!--titel-->
+    <title>Cloudifytests.io</title>
+    <!--fev-icon-->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <!--font-link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,51 +39,59 @@
 
 <body>
     <!--collaps-navbar-->
-    <section id="navbar" class="fixed-top">
+    <section id="navbar" class="container-flude fixed-top">
         <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo"><img src="images/Final-logo.svg" alt="Logo" class="img-fluid"></a>
-                <input type="checkbox" id="toggler">
-                <label for="toggler"><i class="ri-menu-line"></i></label>
-                <div class="menu">
-                    <ul class="list">
-                        <li class="nav-link"><a href="#">Home</a></li>
-                        <li class="nav-link"><a href="#">About</a></li>
-                        <li class="nav-link"><a href="#Why-use-Cloudifytests">Why Cloudifytests</a></li>
-                        <li class="nav-link"><a href="#adventages">Advantages</a></li>
-                        <li class="nav-link"><a href="#contact">Contact</a></li>
-                        <li class="nav-link signup"><a href="">Sign Up</a></li>
-                        <li class="nav-link signin"><a href="">Signin</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <div class="row">
+                <nav class="col-12 d-flex justify-content-between align-items-center navbar">
+                    <a href="#" class="logo"><img src="images/Final-logo.svg" alt="Logo" class="img-fluid"></a>
+                    <input type="checkbox" id="toggler">
+                    <label for="toggler"><i class="ri-menu-line"></i></label>
+                    <div class="menu">
+                        <ul class="list">
+                            <li class="nav-link"><a href="#">Home</a></li>
+                            <li class="nav-link"><a href="#">About</a></li>
+                            <li class="nav-link"><a href="#Why-use-Cloudifytests">Why Cloudifytests</a></li>
+                            <li class="nav-link"><a href="#adventages">Advantages</a></li>
+                            <li class="nav-link"><a href="#contact">Contact</a></li>
+                            <li class="nav-link signup"><a
+                                    href="https://prod-cloudifytests.auth.ap-south-1.amazoncognito.com/signup?client_id=3s5klui3sb7ed4qkmf4n9vlo6h&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://cloudifytests.tftlabs.net/auth">Sign
+                                    Up</a></li>
+                            <li class="nav-link signin"><a
+                                    href="https://prod-cloudifytests.auth.ap-south-1.amazoncognito.com/login?client_id=3s5klui3sb7ed4qkmf4n9vlo6h&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://cloudifytests.tftlabs.net/auth">Sign
+                                    in</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
     </section>
     <!--collaps-navbar-exit-->
     <!--banner-start-->
     <section id="banner">
-        <div class="container">
+        <div class="container banner-container">
             <div class="row banner-content d-flex justify-content-between align-items-center">
-                <div class="col-xl-6 col-md-12 col-sm-12 banner-text">
+                <div class="col-xl-6 col-md-12 col-sm-12 col-lg-6 banner-text">
                     <p>Welcome to the Cloudifytests</p>
                     <h1><span>Cross Browser</span> Testing Platform</h1>
                     <h3>Clean and competent testing solutions for your Selenium <span> Automations </span></h3>
                 </div>
-                <div class="col-xl-6 col-md-12 col-sm-12 banner-img">
-                    <img src="images/banner-image.svg" alt="image" class="img-fluid">
+                <div class="col-xl-6 col-md-12 col-sm-12 col-lg-6 banner-img">
+                    <img src="images/banner-image.svg" alt="image" class="img-fluid banner-image-link">
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center buttons">
+                    <!-- <div class=" buttons "> -->
+                    <div class="col-lg-3 col-sm-4 col-md-3">
+                        <a href="https://prod-cloudifytests.auth.ap-south-1.amazoncognito.com/login?client_id=3s5klui3sb7ed4qkmf4n9vlo6h&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://cloudifytests.tftlabs.net/auth"
+                            class="btn-signin">Signin</a>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-md-3">
+                        <a href="https://prod-cloudifytests.auth.ap-south-1.amazoncognito.com/signup?client_id=3s5klui3sb7ed4qkmf4n9vlo6h&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://cloudifytests.tftlabs.net/auth"
+                            class="btn-get-started"> Get Started</a>
+                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
-            <div class="col-12 d-flex justify-content-center align-items-center">
-                <div class="row buttons ">
-                    <div class="col">
-                        <button class="btn-signin">Signin</button>
-                    </div>
-                    <!--div class=" col blank-div"></div>-->
-                    <div class="col">
-                        <button class="btn-get-started">Get Started</button>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
     <!--banner-exit-->
@@ -92,7 +102,8 @@
                 <div class="col d-flex flex-column justify-content-center align-items-center">
                     <h2>Features</h2>
                     <h1>Why use Cloudifytests?</h1>
-                    <p class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    <p class="features-and-Advantages-p-text">Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque
                         laudantium,
                         totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
                         dicta sunt. eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -100,237 +111,367 @@
                 </div>
             </div>
         </div>
-        <div class="container-flude">
+        <!--<div class="container-flude">
             <div class="container px-5 features-section">
-                <div class="row">
-                    <div class="col">
-                        <div class="card features-card d-flex justify-content-center">
+                <div class="row features-row">
+                    <div class="col-sm-12 col-lg-3 col-xl-3 features-cards">
+                        <div class="card text-center features-card d-flex justify-content-center">
                             <div class="image-bg d-flex align-items-center justify-content-center">
                                 <img src="images/unlimited-browsers.svg" alt="feature-image">
                             </div>
-                            <h4>Unlimited Browser</h4>
-                            <p>Run as many browsers as your cluster allows</p>
+                            <h4 class="features-text">Unlimited Browser</h4>
+                            <p class="features-p-text">Run as many browsers as your cluster allows</p>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-lg-3 col-xl-3 features-cards">
                         <div class="card features-card d-flex justify-content-center">
                             <div class="image-bg d-flex align-items-center justify-content-center">
                                 <img src="images/on-premise cluster.svg" alt="feature-image">
                             </div>
-                            <h4>On-Premise Cluster</h4>
-                            <p>Runs on any On-premises hardware
+                            <h4 class="features-text">On-Premise Cluster</h4>
+                            <p class="features-p-text">Runs on any On-premises hardware
                                 or in the Cloud</p>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-lg-3 col-xl-3 features-cards">
                         <div class="card features-card d-flex justify-content-center">
                             <div class="image-bg d-flex align-items-center justify-content-center">
                                 <img src="images/cross-platform.svg" alt="feature-image">
                             </div>
-                            <h4>Cross Platform</h4>
-                            <p>Works across multiple types of browser platformss</p>
+                            <h4 class="features-text">Cross Platform</h4>
+                            <p class="features-p-text">Works across multiple types of browser platformss</p>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-lg-3 col-xl-3 features-cards">
                         <div class="card features-card d-flex justify-content-center">
                             <div class="image-bg d-flex align-items-center justify-content-center">
                                 <img src="images/live-testing.svg" alt="feature-image">
                             </div>
-                            <h4>Live Testing</h4>
-                            <p>Live preview of running Test 
-                                sessions</p>
+                            <h4 class="features-text">Live Testing</h4>
+                            <p class="features-p-text">Live preview of running Test sessions</p>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-lg-3 col-xl-3 features-cards">
                         <div class="card features-card d-flex justify-content-center">
                             <div class="image-bg d-flex align-items-center justify-content-center">
                                 <img src="images/effortlessscalability.svg" alt="feature-image">
                             </div>
-                            <h4>Effortless Scalability</h4>
-                            <p>Achieve build goals with ease. 
-                                Scale on-demand with parallel 
+                            <h4 class="features-text">Effortless Scalability</h4>
+                            <p class="features-p-text">Achieve build goals with ease.
+                                Scale on-demand with parallel
                                 testing.</p>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-lg-3 col-xl-3 features-cards">
                         <div class="card features-card d-flex justify-content-center">
                             <div class="image-bg d-flex align-items-center justify-content-center">
                                 <img src="images/session-recording.svg" alt="feature-image">
                             </div>
-                            <h4>Session Recording</h4>
-                            <p>Capture browser screen and 
-                                save it directly to S3-compatible 
+                            <h4 class="features-text">Session Recording</h4>
+                            <p class="features-p-text">Capture browser screen and
+                                save it directly to S3-compatible
                                 storage</p>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-lg-3 col-xl-3 features-cards">
                         <div class="card features-card d-flex justify-content-center">
                             <div class="image-bg d-flex align-items-center justify-content-center">
                                 <img src="images/manual-sessions.svg" alt="feature-image">
                             </div>
-                            <h4>Manual Sessions</h4>
-                            <p>Create manual sessions directly 
+                            <h4 class="features-text">Manual Sessions</h4>
+                            <p class="features-p-text">Create manual sessions directly
                                 from dashboard effortlessly</p>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-lg-3 col-xl-3 features-cards">
                         <div class="card features-card d-flex justify-content-center">
                             <div class="image-bg d-flex align-items-center justify-content-center">
                                 <img src="images/priority-support.svg   " alt="feature-image">
                             </div>
-                            <h4>Priority Support</h4>
-                            <p>Senior support engineers, response 
+                            <h4 class="features-text">Priority Support</h4>
+                            <p class="features-p-text">Senior support engineers, response
                                 time SLAs and on-call support.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--features-section-exit-->
-    <!--advantages-section-start-->
-    <section id="adventages">
-        <div class="container features">
-            <div class="row">
-                <div class="col d-flex flex-column justify-content-center align-items-center">
-                    <h2>Advantages</h2>
-                    <h1>of CloudifyTests</h1>
-                    <p class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium,
-                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                        dicta sunt. eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                        dicta sunt.</p>
-                </div>
-            </div>
-        </div>
-        <!--advantages-section-exist-->
-        <!--advantages-section-2-start-->
-        <div class="container advantages-buttons">
-            <div class="row advantages-features">
-                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 advantages-feature">
-                    <div class="dashboard advantages">
-                        <h3><a href="#dashboard"> Dashboard</a></h3>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12  advantages-feature">
-                    <div class="sessions advantages">
-                        <h3><a href="#Sessions">Sessions</a> </h3>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12  advantages-feature">
-                    <div class="capabilities advantages">
-                        <h3><a href="#Capabilities">Capabilities</a></h3>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12  advantages-feature">
-                    <div class="history-sessions advantages">
-                        <h3><a href="#History-sessions">History Sessions</a></h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--advantages-section-2-exit-->
-        <!--2-advantages-sections-start-->
-        <div class="container">
-            <div class="row pt-5 pb-5">
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-5" id="dashboard">
-                    <p class="heading">Heading text</p>
-                    <h2>Dashboard</h2>
-                    <p class="peragraph">Senior support engineers, response time SLAs and
-                        on-call support. Senior support engineers, response
-                        time SLAs and on-call support.</p>
-                </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <img src="images/dashboard.svg" alt="" class="img-fluid">
-                </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <img src="images/sessions-image.svg" alt="" class="img-fluid">
-                </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-5" id="Sessions">
-                    <p class="heading">Heading text</p>
-                    <h2>Sessions</h2>
-                    <p class="peragraph">Senior support engineers, response time SLAs and
-                        on-call support. Senior support engineers, response
-                        time SLAs and on-call support.</p>
-                </div>
-
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-5" id="Capabilities">
-                    <p class="heading">Heading text</p>
-                    <h2>Capabilities</h2>
-                    <p class="peragraph">Senior support engineers, response time SLAs and
-                        on-call support. Senior support engineers, response
-                        time SLAs and on-call support.</p>
-                </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <img src="images/capabilities-image.svg" alt="" class="img-fluid">
-                </div>
-
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <img src="images/history-sessions-image.svg" alt="" class="img-fluid">
-                </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-5" id="History-sessions">
-                    <p class="heading">Heading text</p>
-                    <h2>History Sessions</h2>
-                    <p class="peragraph">Senior support engineers, response time SLAs and
-                        on-call support. Senior support engineers, response
-                        time SLAs and on-call support.</p>
-                </div>
-            </div>
-        </div>
-        <!--2-advantages-sections-exit-->
-    </section>
-    <!--Contact-start-->
-    <section id="contact" class="contact_wrapper">
-        <div class="container">
-            <div class="row email-bg d-flex justify-content-center align-items-center">
-                <div class="col-xl-8 col-md-10 col-sm-12">
-                    <form>
-                        <div class="row form-bg">
-                            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                                <h3>Schedule a call with us</h3>
-                                <p>Tell us a few things about yourself and we'll show you a lot more about us.</p>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-6">
-                                <div class="mb-2">
-                                    <input type="text" class="form-control" placeholder="First Name" autocomplete="off" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-6">
-                                <div class="mb-2">
-                                    <input type="text" class="form-control" placeholder="Last Name" autocomplete="off" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-6">
-                                <div class="mb-2">
-                                    <input type="email" class="form-control" placeholder="Email ID" autocomplete="off" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="mb-2">
-                                    <input type="number" class="form-control" placeholder="Mobile No."
-                                        autocomplete="off" required>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="mb-2">
-                                    <textarea id="message" cols="40" rows="6" class="form-control" placeholder="Message"
-                                        autocomplete="off" required></textarea>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="mb-2">
-                                    <button type="submit" class="form-btn"> <a href="">Send Message</a></button>
-                                </div>
-                            </div>
+    </section>-->
+        <!--features-section-exit-->
+        <!--features-section-2-->
+        <div class="container-flude">
+            <div class="container d-flex flex-wrap features-container-bg">
+                <div class="card mx-2 text-center">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="image-bg d-flex justify-content-center align-items-center">
+                            <img src="images/unlimited-browsers.svg" alt="feature-image">
                         </div>
-                    </form>
+                        <h6 class="card-title">Unlimited Browser</h6>
+                        <p class="card-text features-p-text">Run as many browsers as your cluster allows</p>
+                    </div>
                 </div>
+                <!--2-->
+                <div class="card mx-2 text-center">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="image-bg d-flex justify-content-center align-items-center">
+                            <img src="images/on-premise cluster.svg" alt="feature-image">
+                        </div>
+                        <h6 class="card-title">On-Premise Cluster</h6>
+                        <p class="card-text features-p-text">Runs on any On-premises hardware or in the Cloud</p>
+                    </div>
+                </div>
+                <!--2-exit-->
+                <!--3-->
+                <div class="card mx-2 text-center">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="image-bg d-flex justify-content-center align-items-center">
+                            <img src="images/cross-platform.svg" alt="feature-image">
+                        </div>
+                        <h6 class="card-title">Cross Platform</h6>
+                        <p class="card-text features-p-text">Works across multiple types of browser platformss</p>
+                    </div>
+                </div>
+                <!--3-exit-->
+                <!--4-->
+                <div class="card mx-2 text-center">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="image-bg d-flex justify-content-center align-items-center">
+                            <img src="images/live-testing.svg" alt="feature-image">
+                        </div>
+                        <h6 class="card-title">Live Testing</h6>
+                        <p class="card-text features-p-text">Live preview of running Test sessions</p>
+                    </div>
+                </div>
+                <!--4-exit-->
+                <!--5-->
+                <div class="card mx-2 text-center">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="image-bg d-flex justify-content-center align-items-center">
+                            <img src="images/effortless-scalability.svg" alt="feature-image">
+                        </div>
+                        <h6 class="card-title">Effortless Scalability</h6>
+                        <p class="card-text features-p-text">Achieve build goals with ease. Scale on-demand with
+                            parallel testing.</p>
+                    </div>
+                </div>
+                <!--5-exit-->
+                <!--6-->
+                <div class="card mx-2 text-center">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="image-bg d-flex justify-content-center align-items-center">
+                            <img src="images/session-recording.svg" alt="feature-image">
+                        </div>
+                        <h6 class="card-title">Session Recordin</h6>
+                        <p class="card-text features-p-text">Capture browser screen and save it directly to
+                            S3-compatible storage</p>
+                    </div>
+                </div>
+                <!--6-exit-->
+                <!--7-->
+                <div class="card mx-2 text-center">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="image-bg d-flex justify-content-center align-items-center">
+                            <img src="images/manual-sessions.svg" alt="feature-image">
+                        </div>
+                        <h6 class="card-title">Manual Sessions</h6>
+                        <p class="card-text features-p-text">Create manual sessions directly from dashboard effortlessly
+                        </p>
+                    </div>
+                </div>
+                <!--7-exit-->
+                <!--8-->
+                <div class="card mx-2 text-center">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="image-bg d-flex justify-content-center align-items-center">
+                            <img src="images/priority-support.svg" alt="feature-image">
+                        </div>
+                        <h6 class="card-title">Priority Support</h6>
+                        <p class="card-text features-p-text">Senior support engineers, response time SLAs and on-call
+                            support.</p>
+                    </div>
+                </div>
+                <!--8-exit-->
+
             </div>
         </div>
-    </section>
-    <!--Contact-exit-->
+        <!--features-section-exit-2-->
+        <!--advantages-section-start-->
+        <section id="adventages">
+            <div class="container features">
+                <div class="row">
+                    <div class="col d-flex flex-column justify-content-center align-items-center">
+                        <h2>Advantages</h2>
+                        <h1>of CloudifyTests</h1>
+                        <p class="features-and-Advantages-p-text">Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium doloremque
+                            laudantium,
+                            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                            vitae
+                            dicta sunt. eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                            dicta sunt.</p>
+                    </div>
+                </div>
+            </div>
+            <!--advantages-section-exist-->
+            <!--new-adnantages-section-->
+            <!--div class="container-flude" id="new-adnantages-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="new-adnantages-section-list">
+                            <li class="new-adnantages-section-links"><a href="#dashboard">Dashboard</a></li>
+                            <li class="new-adnantages-section-links"><a href="">Sessions</a></li>
+                            <li class="new-adnantages-section-links"><a href="">Capabilities</a></li>
+                            <li class="new-adnantages-section-links"><a href="">History Sessions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>-->
 
-    <!--footer-2-->
+            <!--new-adnantages-section-->
+            <!--advantages-section-2-start-->
+            <div class="container advantages-buttons">
+                <div class="row advantages-features d-flex flex-row justify-content-between align-items-center">
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 advantages-feature">
+                        <a href="#dashboard">
+                            <div class="dashboard advantages">
+                                <h3> Dashboard</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12  advantages-feature">
+                        <a href="#Sessions">
+                            <div class="sessions advantages">
+                                <h3>Sessions </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12  advantages-feature">
+                        <a href="#Capabilities">
+                            <div class="capabilities advantages">
+                                <h3>Capabilities</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12  advantages-feature">
+                        <a href="#History-sessions">
+                            <div class="history-sessions advantages">
+                                <h3>History Sessions</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--advantages-section-2-exit-->
+            <!--2-advantages-sections-start-->
+            <div class="container">
+                <div class="row pt-5 pb-5">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 alignment-of-adventages">
+                        <p class="heading">Heading text</p>
+                        <h2 class="adva-bold-heating">Dashboard</h2>
+                        <p class="adva-peragraph">Senior support engineers, response time SLAs and
+                            on-call support. Senior support engineers, response
+                            time SLAs and on-call support.</p>
+                    </div>
+                    <div id="dashboard"
+                        class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end alignment-of-adventages">
+                        <img src="images/dashboard.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 alignment-of-adventages" id="Sessions">
+                        <img src="images/sessions-image.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 alignment-of-adventages">
+                        <p class="heading">Heading text</p>
+                        <h2 class="adva-bold-heating">Sessions</h2>
+                        <p class="adva-peragraph">Senior support engineers, response time SLAs and
+                            on-call support. Senior support engineers, response
+                            time SLAs and on-call support.</p>
+                    </div>
+
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 alignment-of-adventages">
+                        <p class="heading">Heading text</p>
+                        <h2 class="adva-bold-heating">Capabilities</h2>
+                        <p class="adva-peragraph">Senior support engineers, response time SLAs and
+                            on-call support. Senior support engineers, response
+                            time SLAs and on-call support.</p>
+                    </div>
+                    <div id="Capabilities"
+                        class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end alignment-of-adventages">
+                        <img src="images/capabilities-image.svg" alt="" class="img-fluid">
+                    </div>
+
+                    <div id="History-sessions"
+                        class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 alignment-of-adventages">
+                        <img src="images/history-sessions-image.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 alignment-of-adventages">
+                        <p class="heading">Heading text</p>
+                        <h2 class="adva-bold-heating">History Sessions</h2>
+                        <p class="adva-peragraph">Senior support engineers, response time SLAs and
+                            on-call support. Senior support engineers, response
+                            time SLAs and on-call support.</p>
+                    </div>
+                </div>
+            </div>
+            <!--2-advantages-sections-exit-->
+        </section>
+        <!--Contact-start-->
+        <section id="contact" class="contact_wrapper">
+            <div class="container">
+                <div class="row email-bg d-flex justify-content-center align-items-center">
+                    <div class="col-xl-8 col-md-10 col-sm-12">
+                        <form>
+                            <div class="row form-bg">
+                                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                                    <h3>Schedule a call with us</h3>
+                                    <p class="form-p">Tell us a few things about yourself and we'll show you a lot more
+                                        about us.</p>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="mb-2">
+                                        <input type="text" class="form-control" placeholder="First Name"
+                                            autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="mb-2">
+                                        <input type="text" class="form-control" placeholder="Last Name"
+                                            autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="mb-2">
+                                        <input type="email" class="form-control" placeholder="Email ID"
+                                            autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="mb-2">
+                                        <input type="number" class="form-control" placeholder="Mobile No."
+                                            autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-2">
+                                        <textarea id="message" cols="40" rows="6" class="form-control"
+                                            placeholder="Message" autocomplete="off" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-2">
+                                        <button type="submit" class="form-btn"> <a href="">Send Message</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Contact-exit-->
+
+        <!--footer-2-->
         <!--footer-->
         <footer id="footer-section">
             <div class="footer-container">
@@ -339,8 +480,8 @@
                         <h4>Company</h4>
                         <ul>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Why CloudifyTests</a></li>
-                            <li><a href="#">Contect</a></li>
+                            <li><a href="#Why-use-Cloudifytests">Why CloudifyTests</a></li>
+                            <li><a href="#contact">Contect</a></li>
                             <li><a href="#">Careers</a></li>
                         </ul>
                     </div>
@@ -375,35 +516,38 @@
             </div>
         </footer>
         <!--footer-exit-->
-    <!--footer-2-exit-->
-    <div class="container-floud copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <p class="copyright-text">Copyright 2021-22. All right reserved</p> 
-                    <!-- <p> Terms of Service Cookies Policy</p> -->
+        <!--copyright-->
+        <div class="container-floud copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <p class="copyright-text">Copyright 2021-22. All right reserved</p>
+                        <!-- <p> Terms of Service Cookies Policy</p> -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-flude cookies-privacy">
-        <div class="container ">
-            <div class="row d-flex justify-content-between align-items-center">
-                <div class="col-xl-11 col-sm-12 col-md-12 cookies d-flex justify-content-start align-items-start">
-                    <p class="how-can-help">Cloudifytests.io uses cookies to give you the best online
-                        experience.
-                        If you continue to use this site, you agree to the use of cookies.
-                        Please see our privacy policy for details. <a href="#"> Learn more</a></p>
-                </div>
-                <div
-                    class="col-xl-1 col-sm-12 col-md-12 accept-bg d-flex justify-content-center align-items-center">
-                    <p>Accept</p>
+        <!--copyright-exit-->
+        <!--cookies-policy-->
+        <div id="consentNotice" class="container-flude cookies-privacy fixed-bottom">
+            <div class="container">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-xl-11 col-sm-12 col-md-12 cookies d-flex justify-content-start align-items-start">
+                        <p class="how-can-help">Cloudifytests.io uses cookies to give you the best online
+                            experience.
+                            If you continue to use this site, you agree to the use of cookies.
+                            Please see our privacy policy for details. <a href="#"> Learn more</a></p>
+                    </div>
+                    <div
+                        class="col-xl-1 col-sm-12 col-md-12 accept-bg d-flex justify-content-center align-items-center">
+                        <button class="accept-btn" onclick="acceptConsent();">Accept</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--footer-exit-->
-
+        <!--cookies-exit-->
+        <!--java-script-->
+        <script src="js/cookie_script.js"></script>
 </body>
 
 </html>
