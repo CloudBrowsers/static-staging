@@ -257,8 +257,8 @@ h3 span{
 }
 
 .card{
-    width: 230px;
-    height: 230px;
+    width: 240px;
+    height: 240px;
     /* padding: 10px; */
     border: none;
     border-radius: 0px;
@@ -443,6 +443,9 @@ h3 span{
     border: 1px solid #EFF7FA;
     background-color: #EFF7FA;
     border-radius: 5px;
+    padding: 5px;
+    font-size: 22px;
+    font-weight: 400;
     /* background: #EFF7FA;
     width: 100%;
     /* border: 1px solid black; */
@@ -475,16 +478,20 @@ h3 span{
     border: 0px;
     border-radius: 5px;
     background-color: #16122C;
-    color: white;
+    color: #55D4AB;
+    font-size: 16px;
+    cursor: pointer;
 }
-.form-btn a{
+
+/* .form-btn a button{
     width: 100%;
     height: 50px;
     border: 0px;
     color: #55D4AB;
     text-decoration: none;
-}
-.form-btn a:hover{
+    
+} */
+.form-btn:hover{
     width: 100%;
     height: 50px;
     border: 0px;
@@ -668,3 +675,21 @@ textarea::placeholder {
 #consentNotice{
     display: None;
 }
+/*help=mail-id*/
+/* .help-mail-id{
+    background-color: #16122C;
+    color: white;
+}
+.help-mail-id h4{
+    background-color: #16122C;
+    font-size: 22px;
+    color: white;
+}
+
+.help-mail-id a{
+    color: #55D4AB;
+}
+.help-mail-id a:hover{
+    color: white;
+    text-decoration: none;
+} */
