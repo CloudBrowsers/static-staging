@@ -11,6 +11,14 @@ html{
 body{
     /* font-family: Poppins; */
 }
+.logo-text{
+    color: #4ED7B2;
+    font-size: 22px;
+    font-family: auto;
+    display: inline;
+    margin-bottom: 0;
+    margin-left: 6px;
+}
 .banner-text p{
     font-size: 20px;
     font-weight: 300;
@@ -69,6 +77,8 @@ h2 span{
     text-decoration: none;
     color: #4ED7B2;
     display: block;
+    display: flex;
+    align-items: center;
 }
 .navbar a:hover{
     text-decoration: none;
