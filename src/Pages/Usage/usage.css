@@ -1,0 +1,43 @@
+.usag {
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  background: #ecf5ff;
+  margin-top: 50px;
+}
+.usage_container {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+.paper {
+  background: #ecf5ff !important;
+}
+.paper p {
+  background: #ecf5ff !important;
+  font-size: 30px !important;
+  line-height: 1.4 !important;
+  margin: 1.5rem 0 !important;
+  color: #469272 !important;
+  font-weight: 500 !important;
+}
+.autoplay div div div .step .heading {
+  font-size: 22px;
+  font-weight: 600;
+}
+.autoplay div div div .step .desc {
+  font-style: italic;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 380px) {
+  .usag {
+    margin-top: 20px;
+    width: 109%;
+    padding: 1rem;
+  }
+  .paper p {
+    font-size: 22px !important;
+  }
+  .usag .usage_container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}

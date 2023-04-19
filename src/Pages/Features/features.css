@@ -1,0 +1,135 @@
+#features {
+  padding-top: 50px;
+}
+.features_container {
+  text-align: center;
+}
+.cloudifyTests {
+  font-size: 3rem;
+  line-height: 1.4;
+  margin: 1.5rem 0;
+  color: #469272;
+  font-weight: 500;
+  position: relative;
+  bottom: 1rem;
+}
+.text_increase {
+  position: relative;
+  bottom: 24px;
+}
+h1 {
+  letter-spacing: inherit;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+}
+.feature_text {
+  margin: 0 auto;
+  color: var(--dark-text);
+  font-size: 16px;
+  margin-top: 12px;
+  position: relative;
+  bottom: 25px;
+}
+
+.box_container {
+  display: flex;
+  gap: 50px;
+}
+.img_conatiner {
+  display: flex;
+  justify-content: center;
+}
+.img_div {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #bbeedd;
+  border: 1px solid #4ed7b2;
+}
+
+.box_feature {
+  padding: 1rem;
+  width: 450px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+}
+h3 {
+  font-weight: 500;
+}
+.text {
+  position: relative;
+  bottom: 0.7rem;
+}
+
+@media screen and (max-width: 480px) {
+  #features {
+    padding-top: 0px;
+  }
+  .features_container {
+    text-align: center;
+  }
+  .cloudifyTests {
+    font-size: 1rem;
+  }
+  .box_container {
+    flex-direction: column;
+    padding-top: 1rem;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img_div {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+  .img_feature {
+    width: 25px;
+  }
+}
+h3 {
+  font-size: 20px;
+}
+.text {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 850px) {
+  .box_container {
+    padding-top: 1rem;
+    gap: 10px;
+  }
+  .box_feature {
+    padding: 0.5rem;
+    width: 210px;
+    height: 200px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  .text {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 380px) {
+  #features {
+    width: 109%;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .text {
+    font-size: 12px;
+  }
+  .box_feature {
+    padding: 1rem;
+    width: 190px;
+  }
+}
