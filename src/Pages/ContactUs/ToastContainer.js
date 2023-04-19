@@ -10,6 +10,7 @@ export default function ToastContainer({ open, setOpenSnackbar, successData }) {
   return (
     <div>
       <Snackbar
+        autoHideDuration={3000}
         anchorOrigin={{
           vertical: "bottom",
           horizontal: "right",

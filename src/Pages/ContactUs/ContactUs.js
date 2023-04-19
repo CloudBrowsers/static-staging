@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import { Alert, Snackbar, TextField } from "@mui/material";
 import { Container } from "@mui/system";
 import React, { useState } from "react";
 import "./contactus.css";
@@ -16,6 +16,7 @@ const ContactUs = () => {
   const [message, setMessage] = useState("");
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const [successData, setSuccessData] = useState(false);
+  const [errorField, setErrorField] = useState(false);
 
   function createJiraIssue() {
     const headers = {
@@ -57,21 +58,45 @@ const ContactUs = () => {
   function handleSubmit(event) {
     event.preventDefault();
     console.log({ firstName, lastName, email, phoneNo, message });
-    createJiraIssue()
-      .then((response) => {
-        setOpenSnackbar(true);
-        setSuccessData(true);
-      })
-      .catch((error) => {
-        setSuccessData(false);
-        setOpenSnackbar(true);
-      });
-    setFirstName("");
-    setLastName("");
-    setEmail("");
-    setPhoneNo("");
-    setMessage("");
+    if (!firstName || !lastName || !email || !phoneNo || !message) {
+      setErrorField(true);
+    } else {
+      createJiraIssue()
+        .then((response) => {
+          setOpenSnackbar(true);
+          setSuccessData(true);
+        })
+        .catch((error) => {
+          setSuccessData(false);
+          setOpenSnackbar(true);
+        });
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setPhoneNo("");
+      setMessage("");
+    }
   }
+
+  const showError = () => {
+    return (
+      <div>
+        <Snackbar
+          autoHideDuration={3000}
+          onClose={() => setErrorField(false)}
+          open={errorField}
+          anchorOrigin={{
+            vertical: "top",
+            horizontal: "center",
+          }}
+        >
+          <Alert variant="filled" severity="error">
+            Please enter all values
+          </Alert>
+        </Snackbar>
+      </div>
+    );
+  };
 
   return (
     <>
@@ -87,6 +112,7 @@ const ContactUs = () => {
         </div>
         <div className="contact_section" data-aos="zoom-in">
           <form onSubmit={handleSubmit}>
+            {showError()}
             <div className="textfield_section">
               <TextField
                 id="outlined-basic"
@@ -124,7 +150,7 @@ const ContactUs = () => {
                 label="Mobile Number"
                 variant="outlined"
                 className="textField"
-                type="text"
+                type="number"
                 value={phoneNo}
                 onChange={(event) => setPhoneNo(event.target.value)}
                 fullWidth
