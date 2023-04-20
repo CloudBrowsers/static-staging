@@ -31,7 +31,7 @@ const ContactUs = () => {
         issuetype: {
           name: "Lead",
         },
-        summary: "CloudifyTest2",
+        summary: "CloudifyTests",
         description: {
           type: "doc",
           version: 1,
