@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cloudifytests/static/css/main.6e424ad3.css",
-    "main.js": "/cloudifytests/static/js/main.16394973.js",
+    "main.js": "/cloudifytests/static/js/main.2eb2efdb.js",
     "static/js/787.c186ffed.chunk.js": "/cloudifytests/static/js/787.c186ffed.chunk.js",
     "static/media/Capabilities_page.svg": "/cloudifytests/static/media/Capabilities_page.dc46a32c9c2c82b9f1d8b47bc6400c3a.svg",
     "static/media/Dashboard.svg": "/cloudifytests/static/media/Dashboard.bc0a7b21253b1b93d92df6de83e53ebf.svg",
@@ -22,11 +22,11 @@
     "static/media/manual-sessions.svg": "/cloudifytests/static/media/manual-sessions.b22fe7134ba07ac1d8d62aa108b10071.svg",
     "index.html": "/cloudifytests/index.html",
     "main.6e424ad3.css.map": "/cloudifytests/static/css/main.6e424ad3.css.map",
-    "main.16394973.js.map": "/cloudifytests/static/js/main.16394973.js.map",
+    "main.2eb2efdb.js.map": "/cloudifytests/static/js/main.2eb2efdb.js.map",
     "787.c186ffed.chunk.js.map": "/cloudifytests/static/js/787.c186ffed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6e424ad3.css",
-    "static/js/main.16394973.js"
+    "static/js/main.2eb2efdb.js"
   ]
 }
