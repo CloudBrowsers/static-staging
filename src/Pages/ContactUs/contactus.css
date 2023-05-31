@@ -1,0 +1,182 @@
+#contact {
+  margin-top: 50px;
+}
+.contact_box {
+  height: 20vh;
+  background-color: #14122c;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.top_secion {
+  text-align: center;
+}
+
+.contact_section {
+  border-radius: 3px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  position: relative;
+  bottom: 2.5rem;
+  background: #bbeedd;
+  border: 1px solid #4ed7b2;
+  padding: 3rem;
+}
+.contact_text {
+  position: relative;
+  bottom: 10px;
+}
+.textfield_section {
+  display: flex;
+  gap: 1rem;
+  height: 55px;
+}
+@media screen and (max-width: 750px) {
+  .textfield_section {
+    flex-direction: column;
+    height: auto;
+  }
+  .textfield_section_2 {
+    flex-direction: column;
+    height: auto;  
+  }
+  #contact {
+    padding-top: 3rem;
+  }
+}
+.textField {
+  background-color: white;
+}
+.textfield_section_2 {
+  display: flex;
+  gap: 1rem;
+  padding-top: 3rem;
+  position: relative;
+  bottom: 1rem;
+  height: 105px;
+}
+.textField {
+  background-color: white;
+}
+.message_field {
+  display: flex;
+  gap: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 140px;
+  bottom: 1rem;
+  padding-top: 1rem;
+}
+.textField {
+  background-color: white;
+  height: 55px;
+}
+
+.textFieldMessage{
+  background-color: white;
+  height: 125px;
+}
+.btn_section {
+  padding: 2rem;
+}
+.btn {
+  width: 100%;
+  height: 50px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #16122c;
+  color: #55d4ab;
+  font-size: 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 850px) {
+  .contact_text_h1 {
+    font-size: 25px;
+  }
+  .contact_section {
+    position: relative;
+    bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contact_text_h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #contact {
+    padding-top: 1rem;
+  }
+  .contact_section {
+    padding: 2rem;
+  }
+
+  .textfield_section_2 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1.5rem;
+    /* margin-bottom: 2rem; */
+    height: 8.5rem;
+  }
+  .message_field {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    height: 140px;
+  }
+  .btn_section {
+    padding: 0rem;
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact_box {
+    padding: 0.5rem;
+  }
+  .contact_text_h1 {
+    font-size: 20px;
+  }
+}
+.message_field {
+  padding-left: 0rem;
+  padding-right: 0rem;
+  margin-top: 20px;
+}
+.btn_section {
+  padding: 0rem;
+  padding-top: 2rem;
+}
+@media screen and (max-width: 380px) {
+  .contact_box {
+    height: 24vh;
+  }
+  #contact {
+    margin-top: 0px;
+    width: 109%;
+  }
+  .contact_section {
+    border-radius: 3px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+  }
+  .contact_text {
+    font-size: 15px;
+  }
+}
+
+.MuiFormHelperText-root {
+  margin-top: 25px !important;
+  /* margin-bottom: 40px !important; */
+  margin-left: 0px !important;
+}

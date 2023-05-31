@@ -1,0 +1,69 @@
+.appbar {
+  background-color: #15122c !important;
+  box-shadow: none !important;
+  padding: 1rem 0.5rem !important;
+}
+.links {
+  text-transform: capitalize !important;
+  color: #fff !important;
+  font-size: 20px;
+  padding: 20px !important;
+}
+.active {
+  color: #6ad8b2 !important;
+}
+.logo_container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logo_container img {
+  width: 55px;
+}
+.logo_container span {
+  color: #6ad8b2 !important;
+  font-size: 40px !important;
+}
+.link-dr {
+  color: black !important;
+}
+@media screen and (max-width: 1080px) {
+  .appbar {
+    padding: 1rem 1rem !important;
+  }
+  .links {
+    font-size: 15px;
+    padding: 10px !important;
+  }
+  .logo_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo_container img {
+    width: 40px;
+  }
+  .logo_container span {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .appbar {
+    padding: 0.5rem 0.5rem !important;
+  }
+  .links {
+    font-size: 10px;
+  }
+  .logo_container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .logo_container img {
+    width: 25px;
+  }
+  .logo_container span {
+    font-size: 10px !important;
+  }
+}

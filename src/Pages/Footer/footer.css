@@ -1,0 +1,126 @@
+.footer_container {
+  color: white;
+}
+.copyright_text {
+  position: relative;
+  top: 10px;
+  text-align: center;
+}
+.footer {
+  background-color: #16122c !important;
+  padding: 50px;
+  margin-top: 20px;
+}
+.testing_text {
+  color: white !important;
+}
+
+.footer-list {
+  list-style: none;
+  margin-top: 35px;
+  padding: 0;
+  color: #55d4ab !important;
+}
+.footer-list1 {
+  list-style: none;
+  margin-top: 35px;
+  padding: 0;
+  color: #55d4ab !important;
+}
+
+.footer-list li:hover {
+  color: white !important;
+  cursor: pointer !important;
+  padding-left: 5px !important;
+}
+.footer-list1 li:hover {
+  color: white !important;
+  padding-left: 5px !important;
+}
+.footer-list li {
+  margin-bottom: 8px;
+}
+.footer-list1 li {
+  margin-bottom: 8px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  margin-top: 35px;
+  gap: 10px;
+}
+.iconbtn {
+  background-color: #55d4ab !important;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 14px;
+}
+.icon_facebook {
+  color: white !important;
+  position: relative;
+  top: 2px;
+}
+.icon {
+  color: white !important;
+  position: relative;
+  top: 3px;
+}
+
+.conatct_us {
+  position: relative !important;
+  left: 45px !important;
+}
+.contect_links {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .contect_links {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 959px) {
+  .root {
+    padding: 20px;
+  }
+
+  .icon-container {
+    margin-top: 16px;
+  }
+
+  .footer-list li {
+    margin-bottom: 26px;
+  }
+  .icon-container {
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: 599px) {
+  .footer {
+    margin-top: 90px;
+  }
+  .footer-list li {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .footer {
+    margin-top: 0px;
+    width: 109%;
+  }
+  .contact_text_h1 {
+    font-size: 22px;
+  }
+}
