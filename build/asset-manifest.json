@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/CloudBrowsers.github.io/static/css/main.d8a35b93.css",
+    "main.js": "/CloudBrowsers.github.io/static/js/main.0c0cd738.js",
+    "static/js/787.c186ffed.chunk.js": "/CloudBrowsers.github.io/static/js/787.c186ffed.chunk.js",
+    "static/media/Capabilities_page.svg": "/CloudBrowsers.github.io/static/media/Capabilities_page.dc46a32c9c2c82b9f1d8b47bc6400c3a.svg",
+    "static/media/Dashboard.svg": "/CloudBrowsers.github.io/static/media/Dashboard.bc0a7b21253b1b93d92df6de83e53ebf.svg",
+    "static/media/banner.svg": "/CloudBrowsers.github.io/static/media/banner.ceedabc568cba117c8d16b4844fa7564.svg",
+    "static/media/Session_page.svg": "/CloudBrowsers.github.io/static/media/Session_page.1bb7749af33e92bf02a34f002b8087d7.svg",
+    "static/media/History_session.svg": "/CloudBrowsers.github.io/static/media/History_session.8f774ff991249294751d9ddabb495352.svg",
+    "static/media/tunnel.svg": "/CloudBrowsers.github.io/static/media/tunnel.d8261ae1da3ee7abf2d2ff6c38b44213.svg",
+    "static/media/banner-image.svg": "/CloudBrowsers.github.io/static/media/banner-image.4a788dced623690fde804b7a12766573.svg",
+    "static/media/priority-support.svg": "/CloudBrowsers.github.io/static/media/priority-support.c591324d7caf1f9fd2817af0c519e9d7.svg",
+    "static/media/logo-dark.svg": "/CloudBrowsers.github.io/static/media/logo-dark.763e03f7126f6c0c91cec8c0e73a29e7.svg",
+    "static/media/unlimited-browsers.svg": "/CloudBrowsers.github.io/static/media/unlimited-browsers.d2636a65544450588d742bee4d840eed.svg",
+    "static/media/logo.svg": "/CloudBrowsers.github.io/static/media/logo.dfb5fa17eee4344e3cf0c038e8979f2e.svg",
+    "static/media/live-testing.svg": "/CloudBrowsers.github.io/static/media/live-testing.52bbed8e128e21b11a5f5abccf70d4e2.svg",
+    "static/media/session-recording.svg": "/CloudBrowsers.github.io/static/media/session-recording.bdbb7c401a0f35e7bb29d9b5b7fbbf71.svg",
+    "static/media/effortless-scalability.svg": "/CloudBrowsers.github.io/static/media/effortless-scalability.4aa69935d5580d920f70db58745e27ed.svg",
+    "static/media/cross-platform.svg": "/CloudBrowsers.github.io/static/media/cross-platform.c995a3b1a27ad97abc58318b3869bc44.svg",
+    "static/media/on-premise cluster.svg": "/CloudBrowsers.github.io/static/media/on-premise cluster.edc4e39e347bd3ec999492631cf51eb9.svg",
+    "static/media/manual-sessions.svg": "/CloudBrowsers.github.io/static/media/manual-sessions.b22fe7134ba07ac1d8d62aa108b10071.svg",
+    "index.html": "/CloudBrowsers.github.io/index.html",
+    "main.d8a35b93.css.map": "/CloudBrowsers.github.io/static/css/main.d8a35b93.css.map",
+    "main.0c0cd738.js.map": "/CloudBrowsers.github.io/static/js/main.0c0cd738.js.map",
+    "787.c186ffed.chunk.js.map": "/CloudBrowsers.github.io/static/js/787.c186ffed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8a35b93.css",
+    "static/js/main.0c0cd738.js"
+  ]
+}
