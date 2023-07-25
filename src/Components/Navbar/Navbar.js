@@ -25,38 +25,38 @@ const navItems = [
   {
     id: "home",
     Name: "Home",
-    link:"/",
-    offset: 0
+    link: "/",
+    offset: 0,
   },
   {
     id: "about",
     Name: "About Us",
-    link:"/about",
-    offset: -70
+    link: "/about",
+    offset: -70,
   },
   {
     id: "offerings",
     Name: "Offerings",
-    link:"/offerings",
-    offset: -400
+    link: "/offerings",
+    offset: -450,
   },
   {
     id: "features",
     Name: "Benefits",
-    link:"/features",
-    offset: -450
+    link: "/features",
+    offset: -450,
   },
   {
     id: "usage",
     Name: "Usage",
-    link:"/usage",
-    offset: -450
+    link: "/usage",
+    offset: -450,
   },
   {
     id: "contact",
     Name: "Contact Us",
-    link:"/contact",
-    offset: -450
+    link: "/contact",
+    offset: -450,
   },
 ];
 
@@ -113,16 +113,19 @@ function Navbar(props) {
           </ListItem>
         ))}
       </List>
-      <Box onClick={handleDrawerToggle} sx={{ position: "absolute", top: 0, right: 0 }}>
-      <IconButton
-        color="inherit"
-        aria-label="close drawer"
-        edge="start"
-        onClick={handleDrawerClose}
-        sx={{ mr: 0, display: { sm: "none" } }}
+      <Box
+        onClick={handleDrawerToggle}
+        sx={{ position: "absolute", top: 0, right: 0 }}
       >
-        <CloseIcon />
-      </IconButton>
+        <IconButton
+          color="inherit"
+          aria-label="close drawer"
+          edge="start"
+          onClick={handleDrawerClose}
+          sx={{ mr: 0, display: { sm: "none" } }}
+        >
+          <CloseIcon />
+        </IconButton>
       </Box>
     </Box>
   );

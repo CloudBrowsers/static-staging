@@ -52,7 +52,7 @@ const Usage = () => {
           data-aos="fade-up"
         >
           {usage_info.map((step, index) => (
-            <div key={step.label}>
+            <div key={`${step.label}-${index}`}>
               {Math.abs(activeStep - index) <= 2 ? (
                 <div className="step">
                   <div className="heading">{step.heading}</div>
@@ -62,16 +62,27 @@ const Usage = () => {
             </div>
           ))}
         </AutoPlaySwipeableViews>
-        <MobileStepper
-          steps={maxSteps}
-          position="static"
-          activeStep={activeStep}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            background: "#ecf5ff",
-          }}
-        />
+        <Box
+          display="flex"
+          justifyContent="center"
+          background="#ecf5ff"
+          cursor="pointer"
+        >
+          {usage_info.map((_, index) => (
+            <div
+              key={`dot-${index}`}
+              style={{
+                width: 10,
+                height: 10,
+                borderRadius: "50%",
+                background: index === activeStep ? "#007bff" : "#ccc",
+                margin: 5,
+                cursor: "pointer",
+              }}
+              onClick={() => handleStepChange(index)}
+            />
+          ))}
+        </Box>
       </Container>
     </div>
   );
