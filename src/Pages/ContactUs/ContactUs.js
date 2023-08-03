@@ -8,7 +8,7 @@ import ToastContainer from "./ToastContainer";
 
 const JIRA_API_ENDPOINT = jira_api;
 
-const ContactUs = () => {
+const ContactUs = (props) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -16,7 +16,6 @@ const ContactUs = () => {
   const [message, setMessage] = useState("");
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const [successData, setSuccessData] = useState(false);
-  const [errorField, setErrorField] = useState(false);
   const [firstNameError, setFirstNameError] = useState(false);
   const [lastNameError, setLastNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
@@ -28,7 +27,7 @@ const ContactUs = () => {
   const emailRegex = /\S+@\S+\.\S+/;
   const phoneRegex = /^\d{10}$/;
 
-  function createJiraIssue() {
+  async function createJiraIssue() {
     const headers = {
       "Content-Type": "application/json",
     };
@@ -38,36 +37,24 @@ const ContactUs = () => {
         project: {
           key: "CUF",
         },
-        issuetype: {
-          name: "Lead",
-        },
         summary: "CloudifyTests",
-        description: {
-          type: "doc",
-          version: 1,
-          content: [
-            {
-              type: "paragraph",
-              content: [
-                {
-                  type: "text",
-                  text: `First Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nPhone No: ${phoneNo}\nMessage: ${message}`,
-                },
-              ],
-            },
-          ],
+        description: `First Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nPhone No: ${phoneNo}\nMessage: ${message}${
+          props.sliderValues.number >= 1000
+            ? `\nAutomation Execution duration per day: ${props.sliderValues.day}\nNumber of parallel session execution: ${props.sliderValues.number}\nAverage session duration per session: ${props.sliderValues.session}\nNumber of days: ${props.noOfDays}\nTotal Session count per day: ${props.totalDaySession}\nTotal Hourly usage per day: ${props.totalHourlySession}\nTotal cost: ${props.totalCost}`
+            : ""
+        }`,
+        issuetype: {
+          id: "10017",
         },
       },
     };
-
-    return axios.post(JIRA_API_ENDPOINT, data, {
+    return await axios.post(JIRA_API_ENDPOINT, data, {
       headers,
     });
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log({ firstName, lastName, email, phoneNo, message });
     let hasError = false;
 
     if (firstName === "" || !nameRegex.test(firstName)) {
@@ -120,26 +107,6 @@ const ContactUs = () => {
       setMessage("");
     }
   }
-
-  // const showError = () => {
-  //   return (
-  //     <div>
-  //       <Snackbar
-  //         autoHideDuration={3000}
-  //         onClose={() => setErrorField(false)}
-  //         open={errorField}
-  //         anchorOrigin={{
-  //           vertical: "top",
-  //           horizontal: "center",
-  //         }}
-  //       >
-  //         <Alert variant="filled" severity="error">
-  //           Please enter all values
-  //         </Alert>
-  //       </Snackbar>
-  //     </div>
-  //   );
-  // };
 
   return (
     <>

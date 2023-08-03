@@ -6,6 +6,7 @@ import Features from "../Features/Features";
 import Offerings from "../Offerings/Offerings";
 import Usage from "../Usage/Usage";
 import Footer from "../../Pages/Footer/Footer";
+import CalculatorModule from "../Calculator/NewClaculator/CalculatorModule";
 
 function LandingPage() {
   return (
@@ -15,7 +16,8 @@ function LandingPage() {
       <Offerings />
       <Features />
       <Usage />
-      <ContactUs />
+      <CalculatorModule />
+      {/* <ContactUs /> */}
       <Footer />
     </div>
   );

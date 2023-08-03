@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./offerings.css";
 import { Container, Grid } from "@mui/material";
-import dashboard from "../../assets/Dashboard.svg";
-import capabilities from "../../assets/Capabilities_page.svg";
-import session from "../../assets/Session_page.svg";
-import historySession from "../../assets/History_session.svg";
-import tunnel from "../../assets/tunnel.svg";
+import dashboard from "../../assets/NewUI/dashboard.svg";
+import capabilities from "../../assets/NewUI/Capabilities.svg";
+import session from "../../assets/NewUI/Session.svg";
+import historySession from "../../assets/NewUI/Historysessions.svg";
+import tunnel from "../../assets/NewUI/Tunnel.svg";
 import { Link } from "react-scroll";
 
 const Offerings = () => {
