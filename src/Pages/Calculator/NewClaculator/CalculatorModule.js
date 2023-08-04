@@ -21,7 +21,7 @@ import PDF from "../../../pdf/CloudifyTests .pdf";
 
 const CalculatorModule = () => {
   const [isReset, setIsReset] = useState(false);
-  const [noOfDays, setNumberOfDays] = useState(0);
+  const [noOfDays, setNumberOfDays] = useState(1);
   const [sliderValues, setSliderValues] = useState({
     number: 0,
     day: 0,
