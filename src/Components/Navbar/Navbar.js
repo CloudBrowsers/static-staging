@@ -19,6 +19,7 @@ import logo from "../../assets/logo.svg";
 import logo_dark from "../../assets/logo-dark.svg";
 import "./navbar.css";
 import CloseIcon from "@mui/icons-material/Close";
+import DialogBox from "../DialogBox/DialogBox";
 
 const drawerWidth = 240;
 const navItems = [
@@ -172,6 +173,7 @@ function Navbar(props) {
                 </Link>
               </Button>
             ))}
+            <DialogBox />
           </Box>
         </Toolbar>
       </AppBar>
