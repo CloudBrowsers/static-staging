@@ -7,19 +7,23 @@ import Offerings from "../Offerings/Offerings";
 import Usage from "../Usage/Usage";
 import Footer from "../../Pages/Footer/Footer";
 import CalculatorModule from "../Calculator/NewClaculator/CalculatorModule";
+import Navbar from "../../Components/Navbar/Navbar";
 
 function LandingPage() {
   return (
-    <div className="App">
-      <Home />
-      <About />
-      <Offerings />
-      <Features />
-      <Usage />
-      <CalculatorModule />
-      {/* <ContactUs /> */}
-      <Footer />
-    </div>
+    <>
+      <Navbar />
+      <div className="App">
+        <Home />
+        <About />
+        <Offerings />
+        <Features />
+        <Usage />
+        <CalculatorModule />
+        {/* <ContactUs /> */}
+        <Footer />
+      </div>
+    </>
   );
 }
 

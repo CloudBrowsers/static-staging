@@ -1,14 +1,17 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Navbar from "./Components/Navbar/Navbar";
 import SnackbarComp from "./Components/Snackbar/SnackbarComp";
 import LandingPage from "./Pages/LandingPage/LandingPage";
+import Trial from "./Pages/Trial/Trial";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <LandingPage />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/trial" element={<Trial />} />
+      </Routes>
       <SnackbarComp />
     </div>
   );

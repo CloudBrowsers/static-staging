@@ -33,7 +33,7 @@ function Home() {
               className="demo"
               href="https://calendly.com/dhingra-sara-1/get-started-with-cloudify-tests?month=2023-04"
             >
-              Schedule your free trial
+              Schedule your demo
             </a>
           </div>
         </div>

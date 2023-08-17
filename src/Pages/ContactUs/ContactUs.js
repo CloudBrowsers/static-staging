@@ -128,7 +128,6 @@ const ContactUs = (props) => {
         </div>
         <div className="contact_section" data-aos="fade-down">
           <form onSubmit={handleSubmit}>
-            {/* {showError()} */}
             <div className="textfield_section">
               <TextField
                 style={{
@@ -146,14 +145,6 @@ const ContactUs = (props) => {
                   firstNameError ? "Please enter your First Name" : ""
                 }
                 fullWidth
-                //   InputProps={{
-                //     style: {
-                //         marginTop:'4px'
-                //     }
-                // }}
-                // inputProps={{
-                //   style: { color: 'pink',marginTop:'4px' },
-                // }}
               />
               <TextField
                 id="outlined-basic"
@@ -210,7 +201,6 @@ const ContactUs = (props) => {
                   }
                 }}
                 value={phoneNo}
-                // onChange={(event) => setPhoneNo(event.target.value)}
                 error={phoneNoError}
                 helperText={phoneNoError ? "Please enter valid Mobile No." : ""}
                 fullWidth

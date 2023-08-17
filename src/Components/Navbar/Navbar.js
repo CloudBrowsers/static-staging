@@ -20,6 +20,7 @@ import logo_dark from "../../assets/logo-dark.svg";
 import "./navbar.css";
 import CloseIcon from "@mui/icons-material/Close";
 import DialogBox from "../DialogBox/DialogBox";
+import { useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = [
@@ -62,6 +63,7 @@ const navItems = [
 ];
 
 function Navbar(props) {
+  const navigate = useNavigate();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -173,7 +175,10 @@ function Navbar(props) {
                 </Link>
               </Button>
             ))}
-            <DialogBox />
+            {/* <DialogBox /> */}
+            <Button className="links" onClick={() => navigate("/trial")}>
+              Free Trial
+            </Button>
           </Box>
         </Toolbar>
       </AppBar>
