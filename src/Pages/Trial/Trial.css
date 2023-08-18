@@ -26,8 +26,13 @@
   font-size: xx-large;
 }
 
+@media screen and (max-width: 480px) {
+  .trial_header > span {
+    font-size: x-large;
+  }
+}
+
 .trial_body {
-  height: 89%;
   width: 95%;
   border-radius: 5px;
   background: #bbeedd;

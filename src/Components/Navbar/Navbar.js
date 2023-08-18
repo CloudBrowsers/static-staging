@@ -17,6 +17,7 @@ import Button from "@mui/material/Button";
 import { Link } from "react-scroll";
 import logo from "../../assets/logo.svg";
 import logo_dark from "../../assets/logo-dark.svg";
+import logo_tft from "../../assets/tft.png";
 import "./navbar.css";
 import CloseIcon from "@mui/icons-material/Close";
 import DialogBox from "../DialogBox/DialogBox";
@@ -175,9 +176,22 @@ function Navbar(props) {
                 </Link>
               </Button>
             ))}
-            {/* <DialogBox /> */}
-            <Button className="links" onClick={() => navigate("/trial")}>
+            <DialogBox />
+            {/* <Button className="links" onClick={() => navigate("/trial")}>
               Free Trial
+            </Button> */}
+            <Button className="links">
+              <a
+                href="https://www.tftus.com"
+                target={"_blank"}
+                style={{
+                  textTransform: "none",
+                  color: "white",
+                  textDecoration: "none",
+                }}
+              >
+                Visit tftus.com
+              </a>
             </Button>
           </Box>
         </Toolbar>

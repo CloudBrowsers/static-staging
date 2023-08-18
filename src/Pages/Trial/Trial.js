@@ -89,17 +89,8 @@ const Trial = () => {
         no_of_employees,
         org_name,
       } = trialData;
-      if (
-        !company_name ||
-        !contact_number ||
-        !description ||
-        !email ||
-        !full_name ||
-        !industry ||
-        !no_of_employees ||
-        !org_name
-      ) {
-        throw new Error("Please enter all params");
+      if (!email || !full_name || !org_name) {
+        throw new Error(`Please enter manditory fields`);
       }
       const resposne = await axios.post(
         "https://stg.cloudifytests.com/send-invite-mail/",
@@ -143,7 +134,7 @@ const Trial = () => {
     <div className="trial_container">
       <div className="trial_box">
         <div className="trial_header">
-          <span>Free Trial</span>
+          <span>Start a Free 7-Day Trial</span>
         </div>
         <div className="trial_body">
           <Grid container spacing={2} padding={"2rem"}>
@@ -152,7 +143,7 @@ const Trial = () => {
                 style={{
                   marginBottom: "10px",
                 }}
-                label="Full Name"
+                label="Full Name *"
                 variant="outlined"
                 className="textField InputName"
                 type="text"
@@ -160,6 +151,8 @@ const Trial = () => {
                 value={trialData.full_name}
                 onChange={changeTrialData}
                 fullWidth
+                error={!trialData.full_name}
+                helperText={!trialData.full_name && "Please enter full mame"}
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -170,14 +163,18 @@ const Trial = () => {
                 id="org_name"
                 value={trialData.org_name}
                 onChange={changeTrialData}
-                label="Organization Name"
+                label="Organization Name *"
                 variant="outlined"
                 className="textField InputName"
                 type="text"
                 fullWidth
+                error={!trialData.org_name}
+                helperText={
+                  !trialData.org_name && "Please enter organization name"
+                }
               />
             </Grid>
-            <Grid item xs={12} sm={6}>
+            {/* <Grid item xs={12} sm={6}>
               <TextField
                 style={{
                   marginBottom: "10px",
@@ -191,7 +188,7 @@ const Trial = () => {
                 type="text"
                 fullWidth
               />
-            </Grid>
+            </Grid> */}
             <Grid item xs={12} sm={6}>
               <TextField
                 style={{
@@ -200,11 +197,15 @@ const Trial = () => {
                 id="email"
                 value={trialData.email}
                 onChange={changeTrialData}
-                label="Email"
+                label="Email *"
                 variant="outlined"
                 className="textField InputName"
                 type="text"
                 fullWidth
+                error={!trialData.email}
+                helperText={
+                  !trialData.email && "Please enter your email address"
+                }
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -243,7 +244,7 @@ const Trial = () => {
                 </Select>
               </FormControl>
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={12} sm={6}>
               <FormControl fullWidth className="textField InputName">
                 <InputLabel id="demo-simple-select-label">Industry</InputLabel>
                 <Select
@@ -263,7 +264,7 @@ const Trial = () => {
                 </Select>
               </FormControl>
             </Grid>
-            <Grid item xs={12}>
+            {/* <Grid item xs={12}>
               <FormControl fullWidth className="textField InputName">
                 <InputLabel id="demo-simple-select-label">
                   How you got to know about us
@@ -283,6 +284,21 @@ const Trial = () => {
                   ))}
                 </Select>
               </FormControl>
+            </Grid> */}
+            <Grid item xs={12}>
+              <TextField
+                label="Tell us more about what you're looking to achieve with our platform or your specific requirements"
+                variant="outlined"
+                multiline
+                rows={4}
+                className="textFieldMessage"
+                type="text"
+                // value={message}
+                // onChange={(event) => setMessage(event.target.value)}
+                // error={messageError}
+                // helperText={messageError ? "Please enter a Message" : ""}
+                fullWidth
+              />
             </Grid>
             <Grid item xs={12}>
               <div className="btn_section">
@@ -292,7 +308,7 @@ const Trial = () => {
                   onClick={freeTrialApi}
                   style={{ opacity: loading ? 0.8 : 1 }}
                 >
-                  {loading ? "Please Wait!!" : "Want Free Trial!!"}
+                  {loading ? "Please Wait.." : "Submit"}
                 </button>
               </div>
             </Grid>

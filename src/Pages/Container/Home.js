@@ -15,16 +15,18 @@ function Home() {
     <Box id="home" className="home_container">
       <Box data-aos="fade-left" className="left_section">
         <div>
-          <div className="home_text">WELCOME TO CLOUDIFYTESTS</div>
-          <div className="cloud_home_text">
-            A CLOUD BASED <span>CROSS-BROWSER</span>
-            <div>TESTING PLATFORM</div>
+          <div className="home_text">
+            A CLOUD BASED
+            <br />
+            CROSS-BROWSER <br />
+            TESTING PLATFORM
           </div>
+          <div className="cloud_home_text">AUTOMATE YOUR TESTING AT SCALE</div>
           <hr />
           <div className="section_bottom">
-            Clean and competent testing solutions for your
             <div>
-              Selenium <span>Automations</span>
+              Effective Testing Solutions for <br /> Selenium and Playwright
+              <span> Automations</span>
             </div>
           </div>
           <div className="demo_section">

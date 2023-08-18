@@ -27,7 +27,7 @@ function Footer() {
               <Typography variant="body1" gutterBottom>
                 <ul className="footer-list1">
                   <li>Web Testing</li>
-                  <li>Mobile Testing</li>
+                  <li>Playwright</li>
                   <li>Selenium Testing</li>
                   <li>Live Testing</li>
                   <li>Locally Hosted Testing</li>
@@ -42,7 +42,7 @@ function Footer() {
               </Typography>
               <Typography variant="body1" gutterBottom>
                 <ul className="footer-list1">
-                  <li>Playwright and Cypress Integration</li>
+                  <li>Cypress Integration</li>
                   <li>Mobile Emulators & Simulators</li>
                   <li>Error Analysis</li>
                   <li>Rest API Access</li>
