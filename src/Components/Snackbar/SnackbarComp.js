@@ -40,6 +40,7 @@ const SnackbarComp = () => {
         onClose={handleClose}
         TransitionComponent={transition}
         key={transition ? transition.name : ""}
+        style={{ maxWidth: "21rem" }}
       >
         <Alert
           onClose={handleClose}

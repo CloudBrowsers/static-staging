@@ -46,13 +46,12 @@ const industryArray = [
   "Fitness and Wellness",
 ];
 
-const descriptionArray = [
-  "Search Engine (Google, Yahoo,etc.)",
-  "Recommended by friend or colleague",
-  "Social Media",
-  "Blog or publication",
-  "Other",
-];
+const Label = ({ text, important }) => (
+  <div>
+    {text}
+    {important && <span style={{ color: "red" }}> *</span>}
+  </div>
+);
 
 const DialogBox = () => {
   const dispatch = useDispatch();
@@ -120,20 +119,11 @@ const DialogBox = () => {
       dispatch(
         toggleSnackbar({
           snackbarToggler: true,
-          snackbarMessage: "Please check your email!!",
+          snackbarMessage:
+            "A verification email is sent to you. Please check you email and complete your registration process",
           snackbarType: "success",
         })
       );
-      setTrialData({
-        full_name: "",
-        org_name: "",
-        contact_number: "",
-        email: "",
-        company_name: "",
-        no_of_employees: "",
-        industry: "",
-        description: "",
-      });
       handleClose();
     } catch (error) {
       console.log(error.response);
@@ -162,7 +152,7 @@ const DialogBox = () => {
           fontWeight={"bold"}
           fontStyle={"italic"}
         >
-          Start a Free 7-Day Trial
+          Register for 7 Days Trial
         </DialogTitle>
         <DialogContent>
           <Grid container spacing={2}>
@@ -171,7 +161,7 @@ const DialogBox = () => {
                 style={{
                   margin: "10px 0",
                 }}
-                label="Full Name *"
+                label={<Label text={"Full Name"} important={true} />}
                 variant="outlined"
                 className="textField InputName"
                 type="text"
@@ -193,7 +183,7 @@ const DialogBox = () => {
                 id="org_name"
                 value={trialData.org_name}
                 onChange={changeTrialData}
-                label="Organization Name *"
+                label={<Label text={"Domain Name"} important={true} />}
                 variant="outlined"
                 className="textField InputName"
                 type="text"
@@ -214,7 +204,7 @@ const DialogBox = () => {
                 id="email"
                 value={trialData.email}
                 onChange={changeTrialData}
-                label="Email *"
+                label={<Label text={"Email"} important={true} />}
                 variant="outlined"
                 className="textField InputName"
                 type="text"
@@ -233,7 +223,7 @@ const DialogBox = () => {
                 id="company_name"
                 value={trialData.company_name}
                 onChange={changeTrialData}
-                label="Company Name"
+                label={<Label text={"Company Name"} important={false} />}
                 variant="outlined"
                 className="textField InputName"
                 type="text"
@@ -250,7 +240,9 @@ const DialogBox = () => {
                   id="demo-simple-select"
                   name="no_of_employees"
                   value={trialData.no_of_employees}
-                  label="Number of Employees"
+                  label={
+                    <Label text={"Number of Employees"} important={false} />
+                  }
                   onChange={changeTrialData}
                 >
                   {employessArray.map((employees) => (
@@ -269,7 +261,7 @@ const DialogBox = () => {
                   id="demo-simple-select"
                   name="industry"
                   value={trialData.industry}
-                  label="Industry"
+                  label={<Label text={"Industry"} important={false} />}
                   onChange={changeTrialData}
                   MenuProps={{ PaperProps: { sx: { maxHeight: 250 } } }}
                 >
@@ -283,16 +275,20 @@ const DialogBox = () => {
             </Grid>
             <Grid item xs={12}>
               <TextField
-                label="Tell us more about what you're looking to achieve"
+                label={
+                  <Label
+                    text={"Tell us more about what you're looking to achieve"}
+                    important={false}
+                  />
+                }
                 variant="outlined"
                 multiline
                 rows={4}
                 className="textFieldMessage"
                 type="text"
-                // value={message}
-                // onChange={(event) => setMessage(event.target.value)}
-                // error={messageError}
-                // helperText={messageError ? "Please enter a Message" : ""}
+                id="description"
+                value={trialData.description}
+                onChange={changeTrialData}
                 fullWidth
               />
             </Grid>
