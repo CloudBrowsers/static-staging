@@ -17,11 +17,12 @@ import Button from "@mui/material/Button";
 import { Link } from "react-scroll";
 import logo from "../../assets/logo.svg";
 import logo_dark from "../../assets/logo-dark.svg";
-import logo_tft from "../../assets/tft.png";
 import "./navbar.css";
 import CloseIcon from "@mui/icons-material/Close";
 import DialogBox from "../DialogBox/DialogBox";
 import { useNavigate } from "react-router-dom";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import { Tooltip } from "@mui/material";
 
 const drawerWidth = 240;
 const navItems = [
@@ -193,6 +194,22 @@ function Navbar(props) {
                 Visit tftus.com
               </a>
             </Button>
+            <Tooltip title="Contact Us">
+              <Button className="links support_icon">
+                <a
+                  href="https://cloudifytests.atlassian.net/servicedesk/customer/portal/3"
+                  target={"_blank"}
+                  style={{
+                    textTransform: "none",
+                    color: "grey",
+                    textDecoration: "none",
+                    display: "flex",
+                  }}
+                >
+                  <SupportAgentIcon />
+                </a>
+              </Button>
+            </Tooltip>
           </Box>
         </Toolbar>
       </AppBar>
