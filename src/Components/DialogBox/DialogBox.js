@@ -112,7 +112,7 @@ const DialogBox = () => {
         throw new Error(`Please enter manditory fields`);
       }
       const resposne = await axios.post(
-        "https://app.cloudifytests.com/send-invite-mail/",
+        "https://app.cloudifytests.io/send-invite-mail/",
         trialData
       );
       console.log(resposne.data);
