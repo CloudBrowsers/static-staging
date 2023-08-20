@@ -120,7 +120,7 @@ const DialogBox = () => {
         toggleSnackbar({
           snackbarToggler: true,
           snackbarMessage:
-            "A verification email is sent to you. Please check you email and complete your registration process",
+            "A verification email is sent to you. Please check your email and complete your registration process",
           snackbarType: "success",
         })
       );
@@ -190,9 +190,7 @@ const DialogBox = () => {
                 fullWidth
                 error={error && !trialData.org_name}
                 helperText={
-                  error &&
-                  !trialData.org_name &&
-                  "Please enter organization name"
+                  error && !trialData.org_name && "Please enter domain name"
                 }
               />
             </Grid>

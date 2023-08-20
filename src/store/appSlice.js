@@ -17,8 +17,11 @@ const appSlice = createSlice({
       state.snackbarData.snackbarMessage = action.payload.snackbarMessage;
       state.snackbarData.snackbarType = action.payload.snackbarType;
     },
+    closeSnackbar: (state, action) => {
+      state.snackbarData.snackbarToggler = action.payload.snackbarToggler;
+    },
   },
 });
 
-export const { toggleSnackbar } = appSlice.actions;
+export const { toggleSnackbar, closeSnackbar } = appSlice.actions;
 export default appSlice.reducer;
