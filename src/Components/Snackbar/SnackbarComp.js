@@ -3,7 +3,7 @@ import Snackbar from "@mui/material/Snackbar";
 import Slide from "@mui/material/Slide";
 import { Alert } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleSnackbar } from "../../store/appSlice";
+import { closeSnackbar } from "../../store/appSlice";
 
 function TransitionLeft(props) {
   return <Slide {...props} direction="left" />;
@@ -24,10 +24,8 @@ const SnackbarComp = () => {
 
   const handleClose = () => {
     dispatch(
-      toggleSnackbar({
+      closeSnackbar({
         snackbarToggler: false,
-        snackbarMessage: "",
-        snackbarType: "error",
       })
     );
   };
