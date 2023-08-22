@@ -118,7 +118,7 @@ function Navbar(props) {
           </ListItem>
         ))}
         <ListItem disablePadding>
-          <ListItemButton sx={{ textAlign: "center" }}>
+          <ListItemButton sx={{ textAlign: "center", padding: 0 }}>
             <ListItemText onClick={handleDrawerClose}>
               <DialogBox sidenav={true} />
             </ListItemText>

@@ -144,7 +144,9 @@ const DialogBox = ({ sidenav }) => {
   return (
     <>
       {sidenav ? (
-        <div onClick={handleClickOpen}>Free Trial</div>
+        <div onClick={handleClickOpen} style={{ padding: "1rem" }}>
+          Free Trial
+        </div>
       ) : (
         <Button className="links" onClick={handleClickOpen}>
           Free Trial
