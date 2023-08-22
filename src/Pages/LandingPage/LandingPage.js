@@ -13,14 +13,13 @@ function LandingPage() {
   return (
     <>
       <Navbar />
-      <div className="App">
+      <div>
         <Home />
         <About />
         <Offerings />
         <Features />
         <Usage />
         <CalculatorModule />
-        {/* <ContactUs /> */}
         <Footer />
       </div>
     </>

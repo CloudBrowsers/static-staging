@@ -5,10 +5,14 @@ import "./contactus.css";
 import axios from "axios";
 import { jira_api } from "../../utiles/constants";
 import ToastContainer from "./ToastContainer";
+import { useDispatch } from "react-redux";
+import { toggleSnackbar } from "../../store/appSlice";
 
 const JIRA_API_ENDPOINT = jira_api;
 
 const ContactUs = (props) => {
+  const dispatch = useDispatch();
+  const [loading, setLoading] = useState(false);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -28,6 +32,7 @@ const ContactUs = (props) => {
   const phoneRegex = /^\d{10}$/;
 
   async function createJiraIssue() {
+    setLoading(true);
     const headers = {
       "Content-Type": "application/json",
     };
@@ -110,8 +115,27 @@ const ContactUs = (props) => {
         .then((response) => {
           console.log(response.data);
           setIsFormSubmitted(true);
+          dispatch(
+            toggleSnackbar({
+              snackbarToggler: true,
+              snackbarMessage:
+                "Thank you for your query, we will contact you soon",
+              snackbarType: "success",
+            })
+          );
         })
-        .catch((error) => console.log(error));
+        .catch((error) => {
+          dispatch(
+            toggleSnackbar({
+              snackbarToggler: true,
+              snackbarMessage: "Something went wrong",
+              snackbarType: "error",
+            })
+          );
+        })
+        .finally(() => {
+          setLoading(false);
+        });
 
       // reset form fields
       setFirstName("");
@@ -236,8 +260,12 @@ const ContactUs = (props) => {
               />
             </div>
             <div className="btn_section">
-              <button type="submit" className="btn">
-                Submit
+              <button
+                disabled={loading}
+                type="submit"
+                className={`btn ${loading && "btn-loading"}`}
+              >
+                {loading ? "Please wait..." : "Submit"}
               </button>
             </div>
           </form>

@@ -13,7 +13,7 @@ function Home() {
   }, []);
   return (
     <Box id="home" className="home_container">
-      <Box data-aos="fade-left" className="left_section">
+      <Box className="left_section">
         <div>
           <div className="home_text">
             A CLOUD BASED
@@ -42,7 +42,7 @@ function Home() {
       </Box>
 
       <Box className="right_section">
-        <img src={banner} alt="banner" data-aos="fade-right" className="img" />
+        <img src={banner} alt="banner" className="img" />
       </Box>
     </Box>
   );

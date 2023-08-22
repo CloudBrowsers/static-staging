@@ -118,7 +118,7 @@
 @media screen and (max-width: 380px) {
   .footer {
     margin-top: 0px;
-    width: 109%;
+    width: 100%;
   }
   .contact_text_h1 {
     font-size: 22px;

@@ -7,7 +7,7 @@
   text-transform: capitalize !important;
   color: #fff !important;
   font-size: 20px;
-  padding: 20px !important;
+  padding: 12px !important;
   vertical-align: middle;
 }
 
@@ -40,10 +40,11 @@
 }
 .logo_container span {
   color: #6ad8b2 !important;
-  font-size: 40px !important;
+  font-size: 32px !important;
 }
 .link-dr {
   color: black !important;
+  text-decoration: none;
 }
 @media screen and (max-width: 1080px) {
   .appbar {
@@ -51,7 +52,7 @@
   }
   .links {
     font-size: 15px;
-    padding: 10px !important;
+    padding: 5px !important;
   }
   .logo_container {
     display: flex;

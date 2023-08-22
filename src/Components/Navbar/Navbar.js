@@ -64,7 +64,7 @@ const navItems = [
   },
 ];
 
-function Navbar(props) {
+const Navbar = (props) => {
   const navigate = useNavigate();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -260,7 +260,7 @@ function Navbar(props) {
       </Box>
     </Box>
   );
-}
+};
 
 Navbar.propTypes = {
   window: PropTypes.func,

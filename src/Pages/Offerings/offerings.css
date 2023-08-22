@@ -104,11 +104,15 @@ p {
   #offerings {
     padding-top: 0px;
     padding-right: 0px !important;
-    width: 109%;
     padding-left: 0px !important;
   }
   .cloudifyTests {
     font-size: 1.5rem;
+    position: relative;
+    top: 10px;
+  }
+  .dashboard {
+    text-align: center;
   }
   h4 {
     font-size: 20px;

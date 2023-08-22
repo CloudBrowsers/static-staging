@@ -16,7 +16,7 @@ const Features = () => {
     <div className="features_container" id="features">
       <Container data-aos="zoom-in">
         <div data-aos="zoom-in">
-          <div className="cloudifyTests">Why CloudifyTests?</div>
+          <div className="cloudifyTestsText">Why CloudifyTests?</div>
           <p className="feature_text">
             Ensure your web/mobile applications' compatibility across different
             browsers, environments and devices. We allow for a higher throughput

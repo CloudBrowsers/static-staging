@@ -58,8 +58,9 @@
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .calculator-main-section-box .session-execution-box {
-  text-align: justify !important;
-  margin: 1rem 2rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .calculator-main-section-box .textField {
   height: 0px !important;
@@ -193,6 +194,9 @@
   .calculator-main-section-box {
     margin-top: 20px;
   }
+  .calculator-main-section-box .btn-section {
+    margin: 0px;
+  }
   .calculator-main-section-box .choose-plan-section-box {
     margin: 0rem !important;
   }
@@ -205,13 +209,15 @@
     padding-right: 5px !important;
   }
   .calculator-main-section-box .session-execution-box {
-    margin: 0.5rem 0.5rem !important;
+    margin: 0px 1px !important;
   }
   .calculator-main-section-box .number-box {
     padding-left: 0px !important;
   }
   .calculator-main-section-box .textField-box {
     width: 90% !important;
+    position: relative !important;
+    right: 10px !important;
     height: 0px !important;
   }
   .calculator-main-section-box .isoSlider-box {
@@ -226,11 +232,11 @@
   }
   .calculator-main-section-box .total-session-box {
     margin-top: 0px;
-    width: 91%;
+    width: 86%;
     font-size: 12px;
   }
   .calculator-main-section-box .total-usage-box {
-    width: 91%;
+    width: 86%;
     font-size: 12px;
   }
   .calculator-main-section-box .count-section {
@@ -245,10 +251,10 @@
     margin-top: 20px;
   }
   .calculator-main-section-box .total-cost {
-    width: 91%;
+    width: 86%;
   }
   .calculator-main-section-box .know-more {
-    width: 91%;
+    width: 86%;
   }
   .calculator-main-section-box .numberofdays-section {
     flex-direction: column;
@@ -256,24 +262,9 @@
     justify-content: center;
     align-items: center;
   }
-  .calculator-main-section-box .text {
-    width: 91%;
-  }
-  .calculator-main-section-box .contact-us {
-    padding: 0.4rem 2rem;
-  }
 }
 @media screen and (max-width: 380px) {
   .calculator-main-section-box {
     margin-top: 20px;
-    width: 109% !important;
-  }
-}
-@media screen and (max-width: 912px) {
-  .calculator-main-section-box .reset {
-    padding: 0.4rem 1rem;
-  }
-  .calculator-main-section-box .contact-us {
-    padding: 0.4rem 1rem;
   }
 }

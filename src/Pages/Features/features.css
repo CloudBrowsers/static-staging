@@ -4,7 +4,7 @@
 .features_container {
   text-align: center;
 }
-.cloudifyTests {
+.cloudifyTestsText {
   font-size: 3rem;
   line-height: 1.4;
   margin: 1.5rem 0;
@@ -74,8 +74,8 @@ h3 {
   .features_container {
     text-align: center;
   }
-  .cloudifyTests {
-    font-size: 1rem;
+  .cloudifyTestsText {
+    font-size: 1.5rem;
   }
   .box_container {
     flex-direction: column;
@@ -119,9 +119,6 @@ h3 {
   }
 }
 @media screen and (max-width: 380px) {
-  #features {
-    width: 109%;
-  }
   h3 {
     font-size: 16px;
   }
