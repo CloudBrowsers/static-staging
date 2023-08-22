@@ -38,11 +38,25 @@ const ContactUs = (props) => {
           key: "CUF",
         },
         summary: "CloudifyTests",
-        description: `First Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nPhone No: ${phoneNo}\nMessage: ${message}${
-          props.sliderValues.number >= 1000
-            ? `\nAutomation Execution duration per day: ${props.sliderValues.day}\nNumber of parallel session execution: ${props.sliderValues.number}\nAverage session duration per session: ${props.sliderValues.session}\nNumber of days: ${props.noOfDays}\nTotal Session count per day: ${props.totalDaySession}\nTotal Hourly usage per day: ${props.totalHourlySession}\nTotal cost: ${props.totalCost}`
-            : ""
-        }`,
+        description: {
+          type: "doc",
+          version: 1,
+          content: [
+            {
+              type: "paragraph",
+              content: [
+                {
+                  type: "text",
+                  text: `First Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nPhone No: ${phoneNo}\nMessage: ${message}${
+                    props.sliderValues.number >= 1000
+                      ? `\nAutomation Execution duration per day: ${props.sliderValues.day}\nNumber of parallel session execution: ${props.sliderValues.number}\nAverage session duration per session: ${props.sliderValues.session}\nNumber of days: ${props.noOfDays}\nTotal Session count per day: ${props.totalDaySession}\nTotal Hourly usage per day: ${props.totalHourlySession}\nTotal cost: ${props.totalCost}`
+                      : ""
+                  }`,
+                },
+              ],
+            },
+          ],
+        },
         issuetype: {
           id: "10017",
         },

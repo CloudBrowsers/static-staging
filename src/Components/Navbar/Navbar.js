@@ -117,6 +117,30 @@ function Navbar(props) {
             </ListItemButton>
           </ListItem>
         ))}
+        <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemText onClick={handleDrawerClose}>
+              <DialogBox sidenav={true} />
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemText
+              primary={
+                <a
+                  className="link-dr"
+                  activeClass="active"
+                  href={"https://www.tftus.com"}
+                  target="_blank"
+                >
+                  Visit tftus.com
+                </a>
+              }
+              className="links"
+            />
+          </ListItemButton>
+        </ListItem>
       </List>
       <Box
         onClick={handleDrawerToggle}
@@ -177,7 +201,7 @@ function Navbar(props) {
                 </Link>
               </Button>
             ))}
-            <DialogBox />
+            <DialogBox sidenav={false} />
             {/* <Button className="links" onClick={() => navigate("/trial")}>
               Free Trial
             </Button> */}

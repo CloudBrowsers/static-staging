@@ -53,7 +53,7 @@ const Label = ({ text, important }) => (
   </div>
 );
 
-const DialogBox = () => {
+const DialogBox = ({ sidenav }) => {
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
   const [trialData, setTrialData] = useState({
@@ -143,9 +143,14 @@ const DialogBox = () => {
 
   return (
     <>
-      <Button className="links" onClick={handleClickOpen}>
-        Free Trial
-      </Button>
+      {sidenav ? (
+        <div onClick={handleClickOpen}>Free Trial</div>
+      ) : (
+        <Button className="links" onClick={handleClickOpen}>
+          Free Trial
+        </Button>
+      )}
+
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle
           textAlign={"center"}
@@ -159,7 +164,7 @@ const DialogBox = () => {
             <Grid item xs={12} sm={6}>
               <TextField
                 style={{
-                  margin: "10px 0",
+                  margin: "0.5rem 0",
                 }}
                 label={<Label text={"Full Name"} important={true} />}
                 variant="outlined"
@@ -292,7 +297,7 @@ const DialogBox = () => {
             </Grid>
           </Grid>
         </DialogContent>
-        <DialogContent>
+        <DialogContent style={{ overflow: "hidden" }}>
           <DialogActions style={{ paddingRight: 0 }}>
             <Button
               variant="outlined"
