@@ -12,7 +12,7 @@ function Footer() {
       <Container className="footer_container">
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={3}>
-            <div>
+            <div className="footer-links">
               <Typography variant="h6" gutterBottom>
                 Company
               </Typography>
@@ -20,7 +20,7 @@ function Footer() {
             </div>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-            <div>
+            <div className="footer-links">
               <Typography variant="h6" gutterBottom className="testing_text">
                 Testing Solutions
               </Typography>
@@ -36,7 +36,7 @@ function Footer() {
             </div>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-            <div>
+            <div className="footer-links">
               <Typography variant="h6" gutterBottom>
                 Upcoming Features
               </Typography>
@@ -52,7 +52,7 @@ function Footer() {
             </div>
           </Grid>
           <Grid item xs={12} sm={6} md={3} className="contect_links">
-            <div>
+            <div className="footer-links-data">
               <Typography variant="h6" gutterBottom>
                 Contact With Us
               </Typography>

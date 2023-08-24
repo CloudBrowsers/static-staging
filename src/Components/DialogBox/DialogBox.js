@@ -10,6 +10,7 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import { toggleSnackbar } from "../../store/appSlice";
 import { FormControl, Grid, InputLabel, MenuItem, Select } from "@mui/material";
+import "../Navbar/navbar.css";
 
 const employessArray = [
   "Self-employed",
@@ -53,7 +54,7 @@ const Label = ({ text, important }) => (
   </div>
 );
 
-const DialogBox = ({ sidenav }) => {
+const DialogBox = ({ isActive }) => {
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
   const [trialData, setTrialData] = useState({
@@ -143,12 +144,12 @@ const DialogBox = ({ sidenav }) => {
 
   return (
     <>
-      {sidenav ? (
-        <div onClick={handleClickOpen} style={{ padding: "1rem" }}>
+      {isActive ? (
+        <div onClick={handleClickOpen} style={{ color: "black !important" }}>
           Free Trial
         </div>
       ) : (
-        <Button className="links" onClick={handleClickOpen}>
+        <Button className={"links"} onClick={handleClickOpen}>
           Free Trial
         </Button>
       )}

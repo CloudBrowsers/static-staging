@@ -21,6 +21,7 @@
 .autoplay div div div .step .heading {
   font-size: 22px;
   font-weight: 600;
+  text-align: center;
 }
 .autoplay div div div .step .desc {
   font-style: italic;

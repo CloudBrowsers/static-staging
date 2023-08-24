@@ -9,9 +9,11 @@
 .calculator-main-section-box .cloudify-header-text-box {
   font-size: 30px;
   font-weight: bold;
+  text-align: center;
 }
 .calculator-main-section-box .cloudify-head-text-box {
   color: #9b9fb2;
+  text-align: center;
 }
 .calculator-main-section-box .choose-plan-section-box {
   background-color: #05173c;
@@ -165,6 +167,10 @@
   text-align: center;
   color: black;
 }
+.calculator-main-section-box .text {
+  position: relative;
+  top: 7px;
+}
 .calculator-main-section-box .cost {
   color: #69d5ab;
   margin-top: 35px !important;
@@ -187,80 +193,80 @@
 .calculator-main-section-box .checkbox {
   color: #69d5ab !important;
 }
+.calculator-main-section-box .choose-plan-container-box {
+  text-align: center;
+}
 .calculator-main-section-box .checkbox-before {
   color: gray !important;
 }
-@media screen and (max-width: 610px) {
-  .calculator-main-section-box {
-    margin-top: 20px;
+.calculator-main-section-box {
+  text-align: justify;
+}
+.calculator-main-section-box .numberofdays-section input {
+  width: 80px;
+  margin-left: 10px;
+  padding: 0.5rem;
+  background: #05173c;
+  border: 1px solid #05173c;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  padding-left: 25px;
+}
+@media screen and (max-width: 1127px) {
+  .calculator-main-section-box .contact-us {
+    padding: 0.4rem 1.5rem;
   }
+  .calculator-main-section-box .reset {
+    padding: 0.4rem 2.5rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .calculator-main-section-box .text {
+    font-size: 15px;
+    position: relative;
+    top: 5px;
+  }
+}
+@media screen and (max-width: 610px) {
   .calculator-main-section-box .btn-section {
     margin: 0px;
+  }
+  .calculator-main-section-box .total-session-box {
+    gap: 20px;
+  }
+  .calculator-main-section-box .total-usage-box {
+    gap: 20px;
+  }
+  .calculator-main-section-box .btn-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .calculator-main-section-box .numberofdays-section input {
+    width: 50px;
+    padding-left: 10px;
+  }
+  .calculator-main-section-box .number-of-days-section-box {
+    padding: 0.5rem;
   }
   .calculator-main-section-box .choose-plan-section-box {
     margin: 0rem !important;
   }
   .calculator-main-section-box .number-of-days-section-box {
-    margin: 0.5rem;
-    flex-direction: column;
-  }
-  .calculator-main-section-box .choose-plan-container-box {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-  }
-  .calculator-main-section-box .session-execution-box {
-    margin: 0px 1px !important;
-  }
-  .calculator-main-section-box .number-box {
-    padding-left: 0px !important;
-  }
-  .calculator-main-section-box .textField-box {
-    width: 90% !important;
-    position: relative !important;
-    right: 10px !important;
-    height: 0px !important;
-  }
-  .calculator-main-section-box .isoSlider-box {
-    width: 90% !important;
-  }
-  .calculator-main-section-box .manually-text-box {
-    position: relative;
-    right: 45px;
-  }
-  .calculator-main-section-box .session-box {
-    padding-left: 0px !important;
-  }
-  .calculator-main-section-box .total-session-box {
-    margin-top: 0px;
-    width: 86%;
-    font-size: 12px;
-  }
-  .calculator-main-section-box .total-usage-box {
-    width: 86%;
-    font-size: 12px;
-  }
-  .calculator-main-section-box .count-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
-  .calculator-main-section-box .btn-section {
-    display: flex;
-    flex-direction: column;
+  .calculator-main-section-box .selected-box {
+    padding: 0.5rem;
+  }
+  .calculator-main-section-box .cloudify-header-text-box {
+    font-size: 25px;
   }
   .calculator-main-section-box .contact-us {
     margin-top: 20px;
-  }
-  .calculator-main-section-box .total-cost {
-    width: 86%;
-  }
-  .calculator-main-section-box .know-more {
-    width: 86%;
-  }
-  .calculator-main-section-box .numberofdays-section {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 @media screen and (max-width: 380px) {

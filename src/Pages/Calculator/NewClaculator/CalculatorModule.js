@@ -238,17 +238,6 @@ const CalculatorModule = () => {
                 value={monthly ? "30" : noOfDays}
                 onChange={handleChangeInput}
                 name="noOfDays"
-                style={{
-                  width: "80px",
-                  marginLeft: "10px",
-                  padding: "0.5rem",
-                  background: "#05173c",
-                  border: "1px solid #05173c",
-                  borderRadius: "5px",
-                  color: "white",
-                  textAlign: "center",
-                  paddingLeft: "25px",
-                }}
                 type="number"
                 disabled={monthly ? true : false}
               />
@@ -275,7 +264,7 @@ const CalculatorModule = () => {
         </Grid>
         {/* Choose your plan section */}
         <Container className="choose-plan-container-box">
-          <Box mt={4} fontWeight="bold">
+          <Box mt={4} mb={2} fontWeight="bold">
             Choose Your Plan
           </Box>
           <Grid className="choose-plan-section-box">
