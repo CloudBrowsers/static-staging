@@ -11,6 +11,7 @@ import { useDispatch } from "react-redux";
 import { toggleSnackbar } from "../../store/appSlice";
 import { FormControl, Grid, InputLabel, MenuItem, Select } from "@mui/material";
 import "../Navbar/navbar.css";
+import { free_trial_api } from "../../utiles/constants";
 
 const employessArray = [
   "Self-employed",
@@ -95,7 +96,6 @@ const DialogBox = ({ isActive }) => {
   };
 
   const freeTrialApi = async () => {
-    console.log(trialData);
     try {
       setLoading(true);
       const {
@@ -112,10 +112,7 @@ const DialogBox = ({ isActive }) => {
         setError(true);
         throw new Error(`Please enter manditory fields`);
       }
-      const resposne = await axios.post(
-        "https://app.cloudifytests.io/send-invite-mail/",
-        trialData
-      );
+      const resposne = await axios.post(free_trial_api, trialData);
       console.log(resposne.data);
       dispatch(
         toggleSnackbar({
