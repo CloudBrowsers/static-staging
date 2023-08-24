@@ -10,6 +10,8 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import { toggleSnackbar } from "../../store/appSlice";
 import { FormControl, Grid, InputLabel, MenuItem, Select } from "@mui/material";
+import "../Navbar/navbar.css";
+import { free_trial_api } from "../../utiles/constants";
 
 const employessArray = [
   "Self-employed",
@@ -53,7 +55,7 @@ const Label = ({ text, important }) => (
   </div>
 );
 
-const DialogBox = () => {
+const DialogBox = ({ isActive }) => {
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
   const [trialData, setTrialData] = useState({
@@ -94,7 +96,6 @@ const DialogBox = () => {
   };
 
   const freeTrialApi = async () => {
-    console.log(trialData);
     try {
       setLoading(true);
       const {
@@ -111,10 +112,7 @@ const DialogBox = () => {
         setError(true);
         throw new Error(`Please enter manditory fields`);
       }
-      const resposne = await axios.post(
-        "https://app.cloudifytests.com/send-invite-mail/",
-        trialData
-      );
+      const resposne = await axios.post(free_trial_api, trialData);
       console.log(resposne.data);
       dispatch(
         toggleSnackbar({
@@ -143,9 +141,16 @@ const DialogBox = () => {
 
   return (
     <>
-      <Button className="links" onClick={handleClickOpen}>
-        Free Trial
-      </Button>
+      {isActive ? (
+        <div onClick={handleClickOpen} style={{ color: "black !important" }}>
+          Free Trial
+        </div>
+      ) : (
+        <Button className={"links"} onClick={handleClickOpen}>
+          Free Trial
+        </Button>
+      )}
+
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle
           textAlign={"center"}
@@ -159,7 +164,7 @@ const DialogBox = () => {
             <Grid item xs={12} sm={6}>
               <TextField
                 style={{
-                  margin: "10px 0",
+                  margin: "0.5rem 0",
                 }}
                 label={<Label text={"Full Name"} important={true} />}
                 variant="outlined"
@@ -292,7 +297,7 @@ const DialogBox = () => {
             </Grid>
           </Grid>
         </DialogContent>
-        <DialogContent>
+        <DialogContent style={{ overflow: "hidden" }}>
           <DialogActions style={{ paddingRight: 0 }}>
             <Button
               variant="outlined"

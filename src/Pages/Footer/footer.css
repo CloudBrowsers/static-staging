@@ -114,11 +114,18 @@
   .footer-list li {
     margin-bottom: 8px;
   }
+  .footer-links {
+    text-align: center;
+  }
+  .contect_links {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 380px) {
   .footer {
     margin-top: 0px;
-    width: 109%;
+    width: 100%;
   }
   .contact_text_h1 {
     font-size: 22px;

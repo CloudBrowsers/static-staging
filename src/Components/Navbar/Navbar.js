@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -14,64 +14,100 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { Link } from "react-scroll";
-import logo from "../../assets/logo.svg";
-import logo_dark from "../../assets/logo-dark.svg";
-import "./navbar.css";
-import CloseIcon from "@mui/icons-material/Close";
 import DialogBox from "../DialogBox/DialogBox";
-import { useNavigate } from "react-router-dom";
-import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import logo from "../../assets/logo.svg";
+import "./navbar.css";
 import { Tooltip } from "@mui/material";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import logo_dark from "../../assets/logo-dark.svg";
+import { Link } from "react-scroll";
 
 const drawerWidth = 240;
-const navItems = [
-  {
-    id: "home",
-    Name: "Home",
-    link: "/",
-    offset: 0,
-  },
-  {
-    id: "about",
-    Name: "About Us",
-    link: "/about",
-    offset: -70,
-  },
-  {
-    id: "offerings",
-    Name: "Offerings",
-    link: "/offerings",
-    offset: -450,
-  },
-  {
-    id: "features",
-    Name: "Benefits",
-    link: "/features",
-    offset: -450,
-  },
-  {
-    id: "usage",
-    Name: "Usage",
-    link: "/usage",
-    offset: -450,
-  },
-  {
-    id: "contact",
-    Name: "Contact Us",
-    link: "/contact",
-    offset: -450,
-  },
-];
 
-function Navbar(props) {
-  const navigate = useNavigate();
-  const { window } = props;
+function Navs() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [isActive, setIsActive] = React.useState(false);
+  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+  const navItems = [
+    {
+      id: "home",
+      Name: "Home",
+      link: "/",
+      offset: 0,
+    },
+    {
+      id: "about",
+      Name: "About Us",
+      link: "/about",
+      offset: -70,
+    },
+    {
+      id: "offerings",
+      Name: "Offerings",
+      link: "/offerings",
+      offset: -450,
+    },
+    {
+      id: "features",
+      Name: "Benefits",
+      link: "/features",
+      offset: -450,
+    },
+    {
+      id: "usage",
+      Name: "Usage",
+      link: "/usage",
+      offset: -450,
+    },
+    {
+      id: "contact",
+      Name: "Contact Us",
+      link: "/contact",
+      offset: -450,
+    },
+    {
+      id: "free-trial",
+      Name: <DialogBox isActive={isActive} />,
+      offset: -450,
+    },
+    {
+      id: "visit-tftus",
+      Name: (
+        <a
+          href="https://www.tftus.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            textTransform: "none",
+            color: isActive ? "black" : "white",
+            textDecoration: "none",
+            textTransform: "capitalize",
+          }}
+        >
+          Visit tftus.com
+        </a>
+      ),
+      offset: -450,
+    },
+  ];
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+
+  React.useEffect(() => {
+    setIsActive(windowWidth <= 950);
+  }, [windowWidth, isActive]);
 
   const handleDrawerClose = () => {
     setMobileOpen(false);
@@ -88,8 +124,8 @@ function Navbar(props) {
           padding: "1rem",
         }}
       >
-        <img src={logo_dark} alt="logo_dark" style={{ width: "50px" }} />{" "}
-        <span>CloudifyTests</span>
+        <img src={logo_dark} alt="logo_dark" style={{ width: "50px" }} />
+        <span style={{ fontSize: "25px" }}>CloudifyTests</span>
       </Box>
       <Divider />
       <List>
@@ -99,18 +135,27 @@ function Navbar(props) {
               <ListItemText
                 // primary={<Link to={item.link}>{item.Name}</Link>}
                 primary={
-                  <Link
-                    className="link-dr"
-                    activeClass="active"
-                    to={item.id}
-                    spy={true}
-                    smooth={true}
-                    duration={700}
-                    offset={item.offset}
-                    onClick={handleDrawerClose}
-                  >
-                    {item.Name}
-                  </Link>
+                  item.id == "visit-tftus" ? (
+                    <a
+                      style={{ textDecoration: "none" }}
+                      href="https://www.tftus.com"
+                    >
+                      {item.Name}
+                    </a>
+                  ) : (
+                    <Link
+                      className="link-dr"
+                      activeClass="active"
+                      to={item.id}
+                      spy={true}
+                      smooth={true}
+                      duration={700}
+                      offset={item.offset}
+                      onClick={handleDrawerClose}
+                    >
+                      {item.Name}
+                    </Link>
+                  )
                 }
                 className="links"
               />
@@ -118,104 +163,104 @@ function Navbar(props) {
           </ListItem>
         ))}
       </List>
-      <Box
-        onClick={handleDrawerToggle}
-        sx={{ position: "absolute", top: 0, right: 0 }}
-      >
-        <IconButton
-          color="inherit"
-          aria-label="close drawer"
-          edge="start"
-          onClick={handleDrawerClose}
-          sx={{ mr: 0, display: { sm: "none" } }}
-        >
-          <CloseIcon />
-        </IconButton>
-      </Box>
     </Box>
   );
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
 
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" className="appbar">
+      <AppBar component="nav" className="nav">
         <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 0, display: { sm: "none" } }}
+            sx={
+              isActive
+                ? { mr: 2, display: { sm: "block" } }
+                : { mr: 2, display: { sm: "none" } }
+            }
           >
             <MenuIcon />
           </IconButton>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{
+              flexGrow: 1,
+            }}
           >
             <Box className="logo_container">
               <img src={logo} alt="logoc" /> <span>CloudifyTests</span>
             </Box>
           </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <Box
+            sx={
+              isActive
+                ? { display: { sm: "none" } }
+                : { display: { sm: "block" } }
+            }
+          >
             {navItems.map((item) => (
-              <Button className="links">
-                <Link
-                  activeClass="active"
-                  // className="link-dr"
-                  to={item.id}
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                >
-                  {item.Name}
-                </Link>
+              <Button
+                key={item.id}
+                sx={
+                  isActive
+                    ? { fontSize: "10px", color: "white", display: "none" }
+                    : { color: "#fff", textTransform: "capitalize" }
+                }
+              >
+                {item.id == "visit-tftus" ? (
+                  <a
+                    style={{ textDecoration: "none" }}
+                    href="https://www.tftus.com"
+                  >
+                    {item.Name}
+                  </a>
+                ) : (
+                  <Link
+                    activeClass="active"
+                    className="link-data"
+                    to={item.id}
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                  >
+                    {item.Name}
+                  </Link>
+                )}
               </Button>
             ))}
-            <DialogBox />
-            {/* <Button className="links" onClick={() => navigate("/trial")}>
-              Free Trial
-            </Button> */}
-            <Button className="links">
-              <a
-                href="https://www.tftus.com"
-                target={"_blank"}
-                style={{
-                  textTransform: "none",
-                  color: "white",
-                  textDecoration: "none",
-                }}
-              >
-                Visit tftus.com
-              </a>
-            </Button>
-            <Tooltip title="Contact Us">
-              <Button className="links support_icon">
-                <a
-                  href="https://cloudifytests.atlassian.net/servicedesk/customer/portal/3"
-                  target={"_blank"}
-                  style={{
-                    textTransform: "none",
-                    color: "grey",
-                    textDecoration: "none",
-                    display: "flex",
-                  }}
-                >
-                  <SupportAgentIcon />
-                </a>
-              </Button>
-            </Tooltip>
           </Box>
         </Toolbar>
+        <Tooltip
+          style={{
+            textAlign: "center",
+            marginTop: "8px",
+          }}
+          title={<div>Contact Us</div>}
+        >
+          <Button className="support_icon">
+            <a
+              href="https://cloudifytests.atlassian.net/servicedesk/customer/portal/3"
+              target={"_blank"}
+              style={{
+                textTransform: "none",
+                color: "grey",
+                textDecoration: "none",
+                display: "flex",
+                zIndex: "2",
+              }}
+            >
+              <SupportAgentIcon sx={{ position: "relative", left: "12px" }} />
+            </a>
+          </Button>
+        </Tooltip>
       </AppBar>
       <Box component="nav">
         <Drawer
-          container={container}
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
@@ -223,11 +268,10 @@ function Navbar(props) {
             keepMounted: true,
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { sm: "block" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              color: "black",
             },
           }}
         >
@@ -238,8 +282,4 @@ function Navbar(props) {
   );
 }
 
-Navbar.propTypes = {
-  window: PropTypes.func,
-};
-
-export default Navbar;
+export default Navs;

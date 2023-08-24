@@ -21,6 +21,7 @@
 .autoplay div div div .step .heading {
   font-size: 22px;
   font-weight: 600;
+  text-align: center;
 }
 .autoplay div div div .step .desc {
   font-style: italic;
@@ -30,11 +31,12 @@
 @media screen and (max-width: 380px) {
   .usag {
     margin-top: 20px;
-    width: 109%;
     padding: 1rem;
   }
   .paper p {
     font-size: 22px !important;
+    width: 100% !important;
+    text-align: center !important;
   }
   .usag .usage_container {
     padding-top: 1rem;

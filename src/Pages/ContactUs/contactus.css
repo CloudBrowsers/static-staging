@@ -2,7 +2,7 @@
   margin-top: 50px;
 }
 .contact_box {
-  height: 20vh;
+  height: 22vh;
   background-color: #14122c;
   display: flex;
   justify-content: center;
@@ -30,7 +30,7 @@
 }
 .contact_text {
   position: relative;
-  bottom: 10px;
+  bottom: 8px;
 }
 .textfield_section {
   display: flex;
@@ -44,7 +44,7 @@
   }
   .textfield_section_2 {
     flex-direction: column;
-    height: auto;  
+    height: auto;
   }
   #contact {
     padding-top: 3rem;
@@ -78,7 +78,7 @@
   height: 55px;
 }
 
-.textFieldMessage{
+.textFieldMessage {
   background-color: white;
   height: 125px;
 }
@@ -95,6 +95,9 @@
   font-size: 20px;
   cursor: pointer;
 }
+.btn-loading {
+  opacity: 0.8;
+}
 @media screen and (max-width: 850px) {
   .contact_text_h1 {
     font-size: 25px;
@@ -103,8 +106,16 @@
     position: relative;
     bottom: 1.5rem;
   }
+  .contact_box {
+    height: 16vh;
+  }
 }
 
+@media screen and (max-width: 752px) {
+  .contact_box {
+    height: 17vh;
+  }
+}
 @media screen and (max-width: 650px) {
   .contact_text_h1 {
     font-size: 25px;
@@ -113,7 +124,7 @@
 
 @media screen and (max-width: 750px) {
   #contact {
-    padding-top: 1rem;
+    padding: 1rem 2rem;
   }
   .contact_section {
     padding: 2rem;
@@ -142,9 +153,14 @@
 @media screen and (max-width: 500px) {
   .contact_box {
     padding: 0.5rem;
+    height: 10rem;
   }
   .contact_text_h1 {
     font-size: 20px;
+  }
+  .contact_text {
+    position: relative;
+    bottom: 0px;
   }
 }
 .message_field {
@@ -157,12 +173,9 @@
   padding-top: 2rem;
 }
 @media screen and (max-width: 380px) {
-  .contact_box {
-    height: 24vh;
-  }
   #contact {
     margin-top: 0px;
-    width: 109%;
+    width: 100%;
   }
   .contact_section {
     border-radius: 3px;
@@ -177,6 +190,11 @@
 
 .MuiFormHelperText-root {
   margin-top: 25px !important;
-  /* margin-bottom: 40px !important; */
   margin-left: 0px !important;
+}
+
+@media screen and (max-width: 300px) {
+  .contact_box {
+    height: 12rem;
+  }
 }

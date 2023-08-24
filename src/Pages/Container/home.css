@@ -14,11 +14,11 @@
   color: white;
 }
 .home_text {
-  font-size: 35px;
+  font-size: 28px;
   font-weight: 600;
 }
 hr {
-  margin-top: 20px;
+  margin: 1rem;
 }
 .cloud_text {
   font-family: system-ui;
@@ -59,7 +59,28 @@ hr {
   justify-content: center;
 }
 .img {
-  width: 490px;
+  width: 430px;
+}
+
+@media screen and (max-width: 1240px) {
+  .home_container {
+    padding-left: 4rem;
+    padding-right: 0rem;
+  }
+}
+
+@media screen and (max-width: 1055px) {
+  .img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 977px) {
+  .home_container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -75,11 +96,11 @@ hr {
     justify-content: 2rem;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 0rem;
   }
 
   .home_text {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
   }
   .cloud_text {
@@ -103,22 +124,33 @@ hr {
 .right_section {
   display: contents;
 }
-/* .img {
-  width: 210px;
-  margin-top: 35px;
-} */
 
 @media screen and (max-width: 470px) {
   .home_text {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
-    margin-top: 22px;
+    margin-top: 55px;
+    margin-left: 1rem;
+  }
+  .cloud_home_text {
+    margin-left: 1rem;
+  }
+  #about .about_section .about_container {
+    gap: 0px;
+    padding: 2rem !important;
+  }
+  .h {
+    padding: 0rem;
+  }
+  .left_section {
+    padding: 0px;
+    padding-top: 30px;
   }
   .cloud_text {
     font-size: 14px;
   }
   .section_bottom {
-    font-size: 16px;
+    margin-left: 1rem;
   }
   .demo_section {
     display: flex;
@@ -133,23 +165,21 @@ hr {
 .right_section {
   display: contents;
 }
-/* .img {
-  width: 235px;
-  margin-top: 35px;
-} */
+.img {
+  margin-top: 20px;
+}
 
 @media screen and (max-width: 380px) {
   .home_container {
-    padding-left: 1rem;
-    padding-right: 1rem;
     flex-direction: column;
     display: flex;
     justify-content: 2rem;
     justify-content: center;
     align-items: center;
-    width: 109%;
   }
   .img {
     width: 220px;
+    position: relative;
+    top: 25px;
   }
 }
