@@ -17,7 +17,7 @@
   text-align: center;
 }
 .cloudifyTests {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   line-height: 1.4;
   margin: 1.5rem 0;
   color: #469272;
@@ -109,7 +109,7 @@ p {
   .cloudifyTests {
     font-size: 1.5rem;
     position: relative;
-    top: 10px;
+    top: 15px;
   }
   .dashboard {
     text-align: center;

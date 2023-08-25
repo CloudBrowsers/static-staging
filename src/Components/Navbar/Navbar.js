@@ -150,8 +150,8 @@ function Navs() {
                       to={item.id}
                       spy={true}
                       smooth={true}
-                      duration={700}
-                      offset={item.offset}
+                      duration={500}
+                      offset={-70}
                       onClick={handleDrawerClose}
                     >
                       {item.Name}
