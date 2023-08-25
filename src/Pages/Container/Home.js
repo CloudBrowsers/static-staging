@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import banner from "../../assets/banner-image.svg";
 import { Box } from "@mui/system";
 import { Grid } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function Home() {
   useEffect(() => {

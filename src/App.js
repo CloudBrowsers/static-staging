@@ -1,16 +1,17 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import "./App.css";
 import SnackbarComp from "./Components/Snackbar/SnackbarComp";
 import LandingPage from "./Pages/LandingPage/LandingPage";
-import Trial from "./Pages/Trial/Trial";
+import LoadingPage from "./Pages/LoadingPage/LoadingPage";
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/trial" element={<Trial />} />
+        <Route path="/loading/:id" element={<LoadingPage />} />
+        <Route path="*" element={<LoadingPage />} />
       </Routes>
       <SnackbarComp />
     </div>
