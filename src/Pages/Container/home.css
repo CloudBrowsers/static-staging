@@ -140,7 +140,7 @@ hr {
   }
   #about .about_section .about_container {
     gap: 0px;
-    padding: 2rem !important;
+    padding: 0rem 1rem !important;
   }
   .h {
     padding: 0rem;

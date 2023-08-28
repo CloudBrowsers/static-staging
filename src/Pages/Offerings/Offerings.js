@@ -13,9 +13,9 @@ const Offerings = () => {
     <Container id="offerings">
       <div className="container_offering">
         <div data-aos="zoom-in">
-          <div className="cloudifyTests">Offerings</div>
+          <div className="text-heading">Offerings</div>
           <div className="offering_data">
-            <div className="data">
+            <div className="sub-heading-text">
               <Link
                 activeClass="active"
                 to={"dashboard"}
@@ -28,7 +28,7 @@ const Offerings = () => {
               </Link>
               <Link to={"dashboard"}></Link>
             </div>
-            <div className="data">
+            <div className="sub-heading-text">
               <Link
                 activeClass="active"
                 to={"session"}
@@ -40,7 +40,7 @@ const Offerings = () => {
                 Live Session Monitor
               </Link>
             </div>
-            <div className="data">
+            <div className="sub-heading-text">
               <Link
                 activeClass="active"
                 to={"script"}
@@ -52,7 +52,7 @@ const Offerings = () => {
                 Script-Generator
               </Link>
             </div>
-            <div className="data">
+            <div className="sub-heading-text">
               <Link
                 activeClass="active"
                 to={"historySession"}
@@ -64,7 +64,7 @@ const Offerings = () => {
                 History Sessions
               </Link>
             </div>
-            <div className="data">
+            <div className="sub-heading-text">
               <Link
                 activeClass="active"
                 to={"locallyHosted"}
@@ -79,10 +79,10 @@ const Offerings = () => {
           </div>
         </div>
 
-        <div className="mid_data">
+        <div className="mid_data" style={{ marginTop: "25px" }}>
           <div className="left_container" data-aos="fade-up" id="dashboard">
             <div className="dashboard">Dashboard</div>
-            <div className="dash_text">
+            <div className="paragraph-text">
               Displays number of running and pending sessions. Provides a graph
               of daily application usage including session completion, abortion,
               errors and timeouts over a date range.
@@ -97,7 +97,7 @@ const Offerings = () => {
             <img src={dashboard} alt="dashboard" className="img_off" />
           </div>
         </div>
-        <div className="mid_data" id="session">
+        <div className="mid_data-1" id="session">
           <div
             className="right_container"
             data-aos="flip-right"
@@ -106,9 +106,9 @@ const Offerings = () => {
           >
             <img src={session} alt="sessions" className="img_off" />
           </div>
-          <div className="left_container" data-aos="fade-up">
-            <div className="dashboard">Live Session Monitor</div>
-            <div className="dash_text">
+          <div className="left_container-1" data-aos="fade-up">
+            <div className="dashboard-1">Live Session Monitor</div>
+            <div className="paragraph-text">
               Have a comprehensive view of all running sessions, with
               information like browser and version, test name, duration ,
               creation time, screen resolution, and options to save video and
@@ -119,7 +119,7 @@ const Offerings = () => {
         <div className="mid_data" id="script">
           <div className="left_container" data-aos="fade-up">
             <div className="dashboard">Script-Generator</div>
-            <div className="dash_text">
+            <div className="paragraph-text">
               The platform allows creation of manual sessions with customizable
               options like browser name and version, screen resolution, timeout,
               saving video and logs and also the option to select specific
@@ -135,7 +135,7 @@ const Offerings = () => {
             <img src={capabilities} alt="capabilities" className="img_off" />
           </div>
         </div>
-        <div className="mid_data" id="historySession">
+        <div className="mid_data-1" id="historySession">
           <div
             className="right_container"
             data-aos="flip-right"
@@ -148,9 +148,13 @@ const Offerings = () => {
               className="img_off"
             />
           </div>
-          <div className="left_container" data-aos="fade-up" id="locallyHosted">
-            <div className="dashboard">History Sessions</div>
-            <div className="dash_text">
+          <div
+            className="left_container-1"
+            data-aos="fade-up"
+            id="locallyHosted"
+          >
+            <div className="dashboard-1">History Sessions</div>
+            <div className="paragraph-text">
               Users can access past test-cases with retention time feature.
               Search, sort and filter test-cases, and view and download recorded
               videos and logs with a single click.
@@ -160,7 +164,7 @@ const Offerings = () => {
         <div className="mid_data">
           <div className="left_container" data-aos="fade-up">
             <div className="dashboard">Locally Hosted Testing</div>
-            <div className="dash_text">
+            <div className="paragraph-text">
               Users can access services running on the local system inside
               CloudifyTests cluster for runing automated tests.
             </div>

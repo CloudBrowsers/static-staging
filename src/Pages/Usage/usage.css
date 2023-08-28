@@ -20,29 +20,37 @@
   font-weight: 500 !important;
 }
 .autoplay div div div .step .heading {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
-  text-align: justify;
+  text-align: left;
 }
-.autoplay div div div .step .desc {
+/* .autoplay div div div .step .desc {
   font-style: italic;
   font-size: 20px;
   text-align: justify;
-}
+} */
 
 @media screen and (max-width: 480px) {
   .paper p {
     font-size: 1.5rem !important;
+  }
+  /* .autoplay div div div .step .desc {
+    text-align: center;
+    font-size: 16px;
+  } */
+  .autoplay div div div .step .heading {
+    font-size: 16px;
+    text-align: center;
   }
   .usag .usage_container {
     padding-top: 20px;
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
   .usag {
-    margin-top: 20px;
-    padding: 1rem;
+    margin-top: 0px;
+    padding: 0rem;
   }
   .paper p {
     font-size: 22px !important;

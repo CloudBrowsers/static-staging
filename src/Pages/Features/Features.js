@@ -16,20 +16,20 @@ const Features = () => {
     <div className="features_container" id="features">
       <Container data-aos="zoom-in">
         <div data-aos="zoom-in">
-          <div className="cloudifyTestsText">Why CloudifyTests?</div>
-          <p className="feature_text">
+          <div className="text-heading">Why CloudifyTests?</div>
+          <div className="sub-para-text">
             Ensure your web/mobile applications' compatibility across different
             browsers, environments and devices. We allow for a higher throughput
             of test scenario completion, quick identification of defects and
             handling of multiple parallel and sequential sessions, helping your
             product achieve
-          </p>
-          <div className="text_increase">
-            increased efficiency and improved scalability.
           </div>
+          {/* <div className="paragraph-text"> */}
+          increased efficiency and improved scalability.
+          {/* </div> */}
         </div>
       </Container>
-      <div style={{ background: "#69d5ab" }}>
+      <div style={{ background: "#69d5ab", marginTop: "25px" }}>
         <Container style={{ backgroundColor: "white" }}>
           <div data-aos="zoom-in">
             {/*  */}
@@ -113,14 +113,7 @@ const Features = () => {
                   </div>
                 </div>
               </div>
-              <div
-                className="box_container"
-                style={{
-                  paddingLeft: "1rem",
-                  paddingRight: "1rem",
-                  paddingTop: "2rem",
-                }}
-              >
+              <div className="box_container-bottom">
                 <div className="box_feature">
                   <div>
                     <div className="img_conatiner">

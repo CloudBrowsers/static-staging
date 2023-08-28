@@ -1,0 +1,96 @@
+.text-heading {
+  font-size: 2rem;
+  color: #469272;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+.text-wight-heading {
+  font-size: 2rem;
+  color: white;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+}
+.contact-us-heading {
+  font-size: 2rem;
+  color: white;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+}
+.sub-heading-text {
+  padding: 0.5rem 2rem;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #eff7fa;
+  background-color: #eff7fa;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.sub-heading-text:hover {
+  background-color: #469272;
+  color: white;
+}
+.paragraph-text {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.paragraph-contact-us {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.sub-para-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.MuiFormControl-root {
+  margin-top: 10px !important;
+}
+@media screen and (max-width: 850px) {
+  .sub-heading-text {
+    margin-top: 20px;
+    width: 200px;
+    font-size: 14px;
+  }
+  .MuiFormControl-root > label {
+    font-size: 12px !important;
+    line-height: 1.8em !important;
+  }
+  .MuiInputAdornment-root > p {
+    font-size: 12px !important;
+    line-height: 2.1em !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .text-heading {
+    font-size: 1.3rem;
+    padding-top: 2.5rem;
+  }
+  .text-wight-heading {
+    font-size: 1.3rem;
+    padding-top: 3rem;
+  }
+  .contact-us-heading {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+  }
+  .paragraph-text {
+    text-align: center;
+  }
+  .paragraph-contact-us {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  .MuiGrid-root > .MuiGrid-item {
+    padding-top: 10px !important;
+  }
+  .MuiTextField-root {
+    margin: 7px 0px !important;
+  }
+}

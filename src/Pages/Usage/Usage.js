@@ -39,7 +39,7 @@ const Usage = () => {
     <div className="usag" id="usage">
       <Container maxWidth="sm" className="usage_container">
         <Paper square elevation={0} className="paper" data-aos="fade-up">
-          <Typography component={"p"}>
+          <Typography component={"p"} className="text-heading">
             {usage_info[activeStep].label}
           </Typography>
         </Paper>
@@ -56,7 +56,7 @@ const Usage = () => {
               {Math.abs(activeStep - index) <= 2 ? (
                 <div className="step">
                   <div className="heading">{step.heading}</div>
-                  <div className="desc">{step.desc}</div>
+                  <div className="paragraph-text">{step.desc}</div>
                 </div>
               ) : null}
             </div>

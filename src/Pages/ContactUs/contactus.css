@@ -28,10 +28,10 @@
   border: 1px solid #4ed7b2;
   padding: 3rem;
 }
-.contact_text {
+/* .contact_text {
   position: relative;
   bottom: 8px;
-}
+} */
 .textfield_section {
   display: flex;
   gap: 1rem;
@@ -158,10 +158,10 @@
   .contact_text_h1 {
     font-size: 20px;
   }
-  .contact_text {
+  /* .contact_text {
     position: relative;
     bottom: 0px;
-  }
+  } */
 }
 .message_field {
   padding-left: 0rem;
@@ -172,7 +172,7 @@
   padding: 0rem;
   padding-top: 2rem;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
   #contact {
     margin-top: 0px;
     width: 100%;
@@ -183,9 +183,9 @@
     margin-right: 1rem;
     padding: 1rem;
   }
-  .contact_text {
-    font-size: 15px;
-  }
+  /* .contact_text {
+    font-size: 16px;
+  } */
 }
 
 .MuiFormHelperText-root {

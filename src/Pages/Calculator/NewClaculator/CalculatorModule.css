@@ -11,12 +11,17 @@
   font-weight: bold;
   text-align: center;
 }
-.calculator-main-section-box .cloudify-head-text-box {
-  color: #9b9fb2;
+/* .calculator-main-section-box .cloudify-head-text-box {
+  color: #c4c5c9;
   text-align: center;
-}
+} */
 .calculator-main-section-box .choose-plan-section-box {
   background-color: #05173c;
+  margin: 1rem 3rem !important;
+  border-radius: 5px;
+}
+/* new */
+.choose-plan-box {
   margin: 1rem 3rem !important;
   border-radius: 5px;
 }
@@ -135,7 +140,7 @@
 }
 .calculator-main-section-box .paragraph {
   color: #b5b7b9;
-  font-size: 10px;
+  font-size: 12px;
   position: relative;
   top: 1px;
 }
@@ -200,7 +205,7 @@
   color: gray !important;
 }
 .calculator-main-section-box {
-  text-align: justify;
+  text-align: left;
 }
 .calculator-main-section-box .numberofdays-section input {
   width: 80px;
@@ -212,6 +217,22 @@
   color: white;
   text-align: center;
   padding-left: 25px;
+}
+/* calulator new changes */
+.choose-plan-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.textField-calculator > label {
+  color: #ffffff !important;
+}
+.textField-calculator > div > fieldset {
+  border: 1px solid #ffffff !important;
+}
+.textField-calculator > div > input {
+  -webkit-text-fill-color: white !important;
 }
 @media screen and (max-width: 1127px) {
   .calculator-main-section-box .contact-us {
@@ -227,6 +248,9 @@
     position: relative;
     top: 5px;
   }
+  .choose-plan-box {
+    margin: 2rem 0rem !important;
+  }
 }
 @media screen and (max-width: 610px) {
   .calculator-main-section-box .btn-section {
@@ -234,9 +258,11 @@
   }
   .calculator-main-section-box .total-session-box {
     gap: 20px;
+    font-size: 12px;
   }
   .calculator-main-section-box .total-usage-box {
     gap: 20px;
+    font-size: 12px;
   }
   .calculator-main-section-box .btn-section {
     display: flex;
@@ -269,8 +295,16 @@
     margin-top: 20px;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
   .calculator-main-section-box {
-    margin-top: 20px;
+    margin-top: 0px;
   }
+  .panel-box {
+    color: gray !important;
+    font-size: 11px !important;
+    text-align: left !important;
+  }
+  /* .calculator-main-section-box .cloudify-head-text-box {
+    font-size: 16px;
+  } */
 }

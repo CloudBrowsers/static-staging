@@ -24,13 +24,13 @@
 }
 .about_box {
   border-radius: 5px;
-  text-align: justify;
-  font-style: italic;
+  text-align: left;
   font-size: 20px;
 }
 .about_box_text {
   margin-top: 10px;
   font-size: 20px;
+  padding-right: 0.6rem;
 }
 #about .about_section .about_container .about_box {
   margin-top: 50px;
@@ -49,12 +49,19 @@
 }
 
 @media screen and (max-width: 480px) {
+  #about {
+    margin-top: 0px;
+  }
   .text_about {
     padding-top: 15px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .about_section {
     padding-top: 0px;
+  }
+  .about_box_text {
+    font-size: 16px;
+    padding-right: 0px;
   }
 }
 @media screen and (max-width: 380px) {

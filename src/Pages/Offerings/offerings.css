@@ -7,22 +7,31 @@
   padding: 2rem;
   gap: 20px;
 }
+.mid_data-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 20px;
+}
 @media screen and (max-width: 980px) {
   .mid_data {
     flex-direction: column;
+  }
+  .mid_data-1 {
+    flex-direction: column-reverse;
   }
 }
 
 .container_offering {
   text-align: center;
 }
-.cloudifyTests {
+/* .cloudifyTests {
   font-size: 2.5rem;
   line-height: 1.4;
   margin: 1.5rem 0;
   color: #469272;
   font-weight: 500;
-}
+} */
 .offering_data {
   display: flex;
   justify-content: space-between;
@@ -39,40 +48,52 @@ h4 {
   position: relative;
   bottom: 30px;
 }
-p {
+/* p {
   margin: 0 auto;
   color: var(--dark-text);
   font-size: 16px;
   margin-top: 12px;
   position: relative;
   bottom: 25px;
-}
-.data {
+} */
+/* .data {
   padding: 0.5rem 2rem;
   font-size: 18px;
   border-radius: 5px;
   border: 1px solid #eff7fa;
   background-color: #eff7fa;
   cursor: pointer;
-}
-.data:hover {
+} */
+/* .data:hover {
   background-color: #469272;
   color: white;
-}
+} */
 .left_container {
+  padding: 2rem;
+  padding-top: 6rem;
+}
+.left_container-1 {
   padding: 2rem;
   padding-top: 6rem;
 }
 .dashboard {
   font-size: 25px;
-
   font-weight: 500;
-  text-align: justify;
+  text-align: left;
 }
-.dash_text {
+.dashboard-1 {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: left;
+}
+/* .dash_text {
   text-align: justify;
   margin-top: 20px;
 }
+.dash_text-1 {
+  text-align: justify;
+  margin-top: 20px;
+} */
 .right_container {
   padding: 2rem;
 }
@@ -81,22 +102,25 @@ p {
 }
 
 @media screen and (max-width: 850px) {
-  .cloudifyTests {
+  /* .cloudifyTests {
     font-size: 2rem;
-  }
+  } */
   .offering_data {
     flex-direction: column;
     display: flex;
     align-items: center;
   }
-  .data {
+  /* .data {
     margin-top: 20px;
     width: 200px;
     font-size: 14px;
-  }
+  } */
 }
 
 .left_container {
+  padding-top: 2rem;
+}
+.left_container-1 {
   padding-top: 2rem;
 }
 
@@ -106,20 +130,38 @@ p {
     padding-right: 0px !important;
     padding-left: 0px !important;
   }
-  .cloudifyTests {
-    font-size: 1.5rem;
+  .about_box_text {
+    text-align: center;
+  }
+  /* .dash_text {
+    text-align: center;
+    font-size: 16px;
+  }
+  .dash_text-1 {
+    text-align: center;
+    font-size: 16px;
+  } */
+  /* .cloudifyTests {
+    font-size: 1.7rem;
     position: relative;
     top: 15px;
-  }
+  } */
   .dashboard {
     text-align: center;
+    font-size: 18px;
+  }
+  .dashboard-1 {
+    text-align: center;
+    font-size: 18px;
   }
   h4 {
     font-size: 20px;
     bottom: 25px;
   }
   .img_off {
-    width: 225px;
+    width: 306px;
+    position: relative;
+    bottom: 20px;
   }
   .right_container {
     padding-top: 20px;
@@ -129,5 +171,14 @@ p {
   }
   .mid_data {
     padding: 0rem;
+    gap: 0px;
+    position: relative;
+    bottom: 30px;
+  }
+  .mid_data-1 {
+    padding: 0rem;
+    gap: 0px;
+    position: relative;
+    bottom: 30px;
   }
 }

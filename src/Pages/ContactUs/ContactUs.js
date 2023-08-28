@@ -151,16 +151,18 @@ const ContactUs = (props) => {
       <Container id="contact">
         <div className="contact_box">
           <div className="top_secion">
-            <h1 className="contact_text_h1">Schedule a call with us now!</h1>
+            <div className="contact-us-heading">
+              Schedule a call with us now!
+            </div>
             {isFormSubmitted ? (
-              <p className="contact_text">
+              <div className="paragraph-text">
                 Your response has been sent. We will get back to you shortly.
-              </p>
+              </div>
             ) : (
-              <p className="contact_text">
+              <div className="paragraph-contact-us">
                 To receive further information, please fill out the form below,
                 and we'll be in touch with you shortly.
-              </p>
+              </div>
             )}
           </div>
         </div>

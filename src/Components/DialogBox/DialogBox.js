@@ -9,7 +9,14 @@ import DialogTitle from "@mui/material/DialogTitle";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { toggleSnackbar } from "../../store/appSlice";
-import { FormControl, Grid, InputLabel, MenuItem, Select } from "@mui/material";
+import {
+  FormControl,
+  Grid,
+  InputAdornment,
+  InputLabel,
+  MenuItem,
+  Select,
+} from "@mui/material";
 import "../Navbar/navbar.css";
 import { free_trial_api } from "../../utiles/constants";
 
@@ -180,25 +187,7 @@ const DialogBox = ({ isActive }) => {
                 }
               />
             </Grid>
-            <Grid item xs={12} sm={6}>
-              <TextField
-                style={{
-                  margin: "10px 0",
-                }}
-                id="org_name"
-                value={trialData.org_name}
-                onChange={changeTrialData}
-                label={<Label text={"Domain Name"} important={true} />}
-                variant="outlined"
-                className="textField InputName"
-                type="text"
-                fullWidth
-                error={error && !trialData.org_name}
-                helperText={
-                  error && !trialData.org_name && "Please enter domain name"
-                }
-              />
-            </Grid>
+
             <Grid item xs={12} sm={6}>
               <TextField
                 style={{
@@ -256,7 +245,7 @@ const DialogBox = ({ isActive }) => {
                 </Select>
               </FormControl>
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={12}>
               <FormControl fullWidth className="textField InputName">
                 <InputLabel id="demo-simple-select-label">Industry</InputLabel>
                 <Select
@@ -275,6 +264,32 @@ const DialogBox = ({ isActive }) => {
                   ))}
                 </Select>
               </FormControl>
+            </Grid>
+            <Grid item xs={12} sm={12}>
+              <TextField
+                style={{
+                  margin: "10px 0",
+                }}
+                id="org_name"
+                value={trialData.org_name}
+                onChange={changeTrialData}
+                label={<Label text={"Domain Name"} important={true} />}
+                variant="outlined"
+                className="textField InputName"
+                type="text"
+                fullWidth
+                InputProps={{
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      .cloudifytests.com
+                    </InputAdornment>
+                  ),
+                }}
+                error={error && !trialData.org_name}
+                helperText={
+                  error && !trialData.org_name && "Please enter domain name"
+                }
+              />
             </Grid>
             <Grid item xs={12}>
               <TextField
@@ -297,7 +312,13 @@ const DialogBox = ({ isActive }) => {
             </Grid>
           </Grid>
         </DialogContent>
-        <DialogContent style={{ overflow: "hidden" }}>
+        <DialogContent
+          style={{
+            overflow: "hidden",
+            borderTop: "1px solid gray",
+            padding: "10px 24px 24px 24px",
+          }}
+        >
           <DialogActions style={{ paddingRight: 0 }}>
             <Button
               variant="outlined"

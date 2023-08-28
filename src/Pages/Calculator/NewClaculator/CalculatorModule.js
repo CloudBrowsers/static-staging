@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "@mui/system";
 import "./CalculatorModule.css";
 import {
@@ -7,6 +7,7 @@ import {
   FormControlLabel,
   FormGroup,
   Grid,
+  InputAdornment,
   TextField,
 } from "@mui/material";
 import { saveAs } from "file-saver";
@@ -18,14 +19,42 @@ import { Divider, styled } from "@mui/material";
 import ContactUs from "../../ContactUs/ContactUs";
 import { Link } from "react-scroll";
 import PDF from "../../../pdf/CloudifyTests .pdf";
+import ChoosePlan from "../../../Components/ChoosePlan/ChoosePlan";
+import { useDispatch, useSelector } from "react-redux";
+import { setIsReset, setNoOfDays } from "../../../store/calculatorSlice";
+import SliderComponent from "../../../Components/Slider";
 
 const CalculatorModule = () => {
-  const [isReset, setIsReset] = useState(false);
-  const [noOfDays, setNumberOfDays] = useState(1);
+  const dispatch = useDispatch();
+  const [isActive, setIsActive] = React.useState(false);
+  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  React.useEffect(() => {
+    setIsActive(windowWidth <= 480);
+  }, [windowWidth, isActive]);
+  const noOfDays = useSelector((store) => {
+    return store.calculatorSlice.noOfDays;
+  });
+  const isReset = useSelector((store) => {
+    return store.calculatorSlice.isReset;
+  });
+  const expanded = useSelector((store) => {
+    return store.calculatorSlice.expanded;
+  });
   const [sliderValues, setSliderValues] = useState({
-    number: 0,
-    day: 0,
-    session: 0,
+    number: 5,
+    day: 5,
+    session: 5,
   });
 
   const [selectPlan, setSelectPlan] = React.useState({
@@ -65,7 +94,7 @@ const CalculatorModule = () => {
   };
 
   const handleChangeInput = (event) => {
-    setNumberOfDays(event.target.value);
+    // setNumberOfDays(event.target.value);
   };
 
   const handleSliderInputChange = (sliderName) => (event, newValue) => {
@@ -170,25 +199,27 @@ const CalculatorModule = () => {
 
   const totalCost = () => {
     if (isReset) {
-      setIsReset(false);
+      dispatch(setIsReset(false));
       setSliderValues({ number: 0, day: 0, session: 0 });
       setSelectPlan({
         monthly: false,
         payAsYouGo: false,
         onPremisis: false,
       });
-      setNumberOfDays(0);
+      dispatch(setNoOfDays(0));
+      // setNumberOfDays(0);
+
       return 0;
     }
-    if (monthly) {
+    if (expanded === "panel1") {
       const total_montly_cost = 40 * number;
       return total_montly_cost;
     }
-    if (payAsYouGo) {
+    if (expanded === "panel2") {
       const total_cost = 100 + number * session * day * noOfDays * 0.02;
       return total_cost;
     }
-    if (onPremisis) {
+    if (expanded === "panel3") {
       const total_premisses_cost = session * day * noOfDays * 0.01;
 
       return (
@@ -210,6 +241,7 @@ const CalculatorModule = () => {
   };
   const handleReset = () => {
     setIsReset(true);
+    setSliderValues({ ...sliderValues, number: 0, day: 0, session: 0 });
   };
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
@@ -247,13 +279,16 @@ const CalculatorModule = () => {
       </>
     );
   };
+  useEffect(() => {
+    console.log("sliderValues.number", sliderValues);
+  }, [sliderValues]);
 
   return (
     <>
       <div className="calculator-main-section-box">
         <Grid>
-          <Box className="cloudify-header-text-box">Cost Calculator</Box>
-          <Box className="cloudify-head-text-box">
+          <Box className="text-wight-heading">Cost Calculator</Box>
+          <Box className="sub-para-text">
             <Container>
               Empowering Informed Decisions at CloudifyTests! Transparency is
               paramount, which is why we offer a user-friendly cost calculator.
@@ -267,7 +302,10 @@ const CalculatorModule = () => {
           <Box mt={4} mb={2} fontWeight="bold">
             Choose Your Plan
           </Box>
-          <Grid className="choose-plan-section-box">
+          <Grid className="choose-plan-box">
+            <ChoosePlan />
+          </Grid>
+          {/* <Grid className="choose-plan-section-box">
             <Box
               className={
                 selectPlan.monthly ? "selected-box" : "montly-section-box"
@@ -290,9 +328,7 @@ const CalculatorModule = () => {
                 />
               </FormGroup>
             </Box>
-            {/* Number of day */}
             {renderNumberOfDays(monthly)}
-            {/* pay as you go */}
             <Box
               className={
                 selectPlan.payAsYouGo ? "selected-box" : "pay-section-box"
@@ -315,9 +351,7 @@ const CalculatorModule = () => {
                 />
               </FormGroup>
             </Box>
-            {/* Number of day */}
             {renderNumberOfDays(payAsYouGo)}
-            {/* on premise Section */}
             <Box
               className={
                 selectPlan.onPremisis ? "selected-box" : "pay-section-box"
@@ -340,9 +374,8 @@ const CalculatorModule = () => {
                 />
               </FormGroup>
             </Box>
-            {/* Number of day */}
             {renderNumberOfDays(onPremisis)}
-          </Grid>
+          </Grid> */}
           {/* Range Section  */}
           <Grid
             container
@@ -351,8 +384,19 @@ const CalculatorModule = () => {
             className="session-execution-box"
           >
             <Grid item xs={5.5} className="number-box">
-              <Box className="text">Number Of Parallel Session</Box>
-              <Box>
+              <TextField
+                className="textField-calculator"
+                label={"Number Of Parallel Session"}
+                type="number"
+                value={sliderValues.number}
+                onChange={handleInputChange("number")}
+                name="noOfDays"
+                fullWidth
+                disabled={expanded === "panel1" ? true : false}
+                sx={{ input: { color: "white " } }}
+              />
+              {/* <Box className="text">Number Of Parallel Session</Box> */}
+              {/* <Box>
                 <Box className="enter-manually-section-box">
                   <Box className="no-box">No.</Box>
                   <Box className="manually-text-box">Enter manually</Box>
@@ -371,9 +415,9 @@ const CalculatorModule = () => {
                     },
                   }}
                 />
-              </Box>
+              </Box> */}
               <Box className="isoSlider-box">
-                <IOSSlider
+                {/* <IOSSlider
                   aria-label="ios slider"
                   // defaultValue={0}
                   name="number"
@@ -385,10 +429,35 @@ const CalculatorModule = () => {
                   step={1}
                   min={0}
                   max={2000}
+                /> */}
+                <SliderComponent
+                  value={number}
+                  handleSliderInputChange={handleSliderInputChange("number")}
+                  max={2000}
+                  marks={[
+                    { value: 0 },
+                    { value: 500 },
+                    { value: 1000 },
+                    { value: 1500 },
+                    { value: 2000 },
+                  ]}
                 />
               </Box>
               {/* Automation */}
-              <Box className="text">Number Of Iterations Per Day</Box>
+              <TextField
+                label={"Number Of Iterations Per Day"}
+                className="textField-calculator"
+                type="number"
+                value={sliderValues.day}
+                // className="textfield"
+                onChange={handleInputChange("day")}
+                name="noOfDays"
+                fullWidth
+                disabled={expanded === "panel1" ? true : false}
+                sx={{ input: { color: "white" } }}
+              />
+              {/*  */}
+              {/* <Box className="text">Number Of Iterations Per Day</Box>
               <Box>
                 <Box className="enter-manually-section-box">
                   <Box className="no-box">No.</Box>
@@ -408,9 +477,9 @@ const CalculatorModule = () => {
                     },
                   }}
                 />
-              </Box>
+              </Box> */}
               <Box className="isoSlider-box">
-                <IOSSlider
+                {/* <IOSSlider
                   aria-label="ios slider"
                   // defaultValue={0}
                   name="day"
@@ -420,10 +489,24 @@ const CalculatorModule = () => {
                   sx={{ marginTop: "30px" }}
                   valueLabelDisplay="on"
                   max={50}
+                /> */}
+                <SliderComponent
+                  value={day}
+                  handleSliderInputChange={handleSliderInputChange("day")}
+                  max={24}
+                  marks={[
+                    { value: 0 },
+                    { value: 6 },
+                    { value: 12 },
+                    { value: 18 },
+                    { value: 24 },
+                  ]}
                 />
               </Box>
               {/* Average */}
-              <Box className="text">Average Session Duration</Box>
+
+              {/*  */}
+              {/* <Box className="text">Average Session Duration</Box>
               <Box>
                 <Box className="enter-manually-section-box">
                   <Box className="no-box">No.</Box>
@@ -443,9 +526,20 @@ const CalculatorModule = () => {
                     },
                   }}
                 />
-              </Box>
+              </Box> */}
+              <TextField
+                label={"Average Session Duration"}
+                className="textField-calculator"
+                type="number"
+                value={sliderValues.session}
+                onChange={handleInputChange("session")}
+                name="noOfDays"
+                fullWidth
+                disabled={expanded === "panel1" ? true : false}
+                sx={{ input: { color: "white" } }}
+              />
               <Box className="isoSlider-box">
-                <IOSSlider
+                {/* <IOSSlider
                   aria-label="ios slider"
                   name="number"
                   value={sliderValues.session}
@@ -454,14 +548,28 @@ const CalculatorModule = () => {
                   sx={{ marginTop: "30px" }}
                   valueLabelDisplay="on"
                   max={24}
+                /> */}
+                <SliderComponent
+                  value={session}
+                  handleSliderInputChange={handleSliderInputChange("session")}
+                  max={24}
+                  marks={[
+                    { value: 0 },
+                    { value: 6 },
+                    { value: 12 },
+                    { value: 18 },
+                    { value: 24 },
+                  ]}
                 />
               </Box>
-              <Box className="know-more" onClick={handleDownloadPDF}>
-                Know More
-              </Box>
+              {!isActive && (
+                <Box className="know-more" onClick={handleDownloadPDF}>
+                  Know More
+                </Box>
+              )}
             </Grid>
             {/* Total Section */}
-            <Grid item xs={5.3} mt={3} className="session-box">
+            <Grid item xs={5.3} mt={3} className="session-box" marginTop={1.5}>
               <Box className="total-session-box">
                 <Box>
                   Total Session <span>Count per day</span>
@@ -480,6 +588,9 @@ const CalculatorModule = () => {
               {/* Count-session */}
               <Box className="total-cost">
                 <Box>Total Cost</Box>
+                {!expanded && (
+                  <Box color={"red"}>Please select plan to know your cost</Box>
+                )}
                 <Box className="cost">
                   $ <span>{totalCost()}</span>
                 </Box>
@@ -525,6 +636,11 @@ const CalculatorModule = () => {
                   </div>
                 </Box>
               </Box>
+              {isActive && (
+                <Box className="know-more" onClick={handleDownloadPDF}>
+                  Know More...
+                </Box>
+              )}
             </Grid>
           </Grid>
         </Container>
