@@ -33,7 +33,7 @@ const LoadingPage = () => {
   return (
     <>
       <div className="container">
-        {!errMsg ? (
+        {errMsg ? (
           <h1>{errMsg}</h1>
         ) : (
           <>
