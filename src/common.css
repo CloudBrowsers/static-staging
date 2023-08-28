@@ -4,7 +4,6 @@
   font-weight: 500;
   line-height: 1.4;
   text-align: center;
-  padding-top: 1.5rem;
 }
 .text-wight-heading {
   font-size: 2rem;
@@ -54,7 +53,7 @@
 @media screen and (max-width: 850px) {
   .sub-heading-text {
     margin-top: 20px;
-    width: 200px;
+    width: 275px;
     font-size: 14px;
   }
   .MuiFormControl-root > label {
@@ -69,7 +68,7 @@
 @media screen and (max-width: 480px) {
   .text-heading {
     font-size: 1.3rem;
-    padding-top: 2.5rem;
+    padding-top: 2rem;
   }
   .text-wight-heading {
     font-size: 1.3rem;
