@@ -212,7 +212,7 @@ const CalculatorModule = () => {
     }
     if (expanded === "panel1") {
       const total_montly_cost = 40 * number;
-      const per_session_cost = 40 / 1;
+      const per_session_cost = total_montly_cost / (number * day * 30);
       return (
         <div>
           <div className="cost">
@@ -246,7 +246,8 @@ const CalculatorModule = () => {
     }
     if (expanded === "panel2") {
       const total_cost = 100 + 0.2 * number * session * day * noOfDays;
-      const per_session_cost = 100 + 0.2 * 1 * session * day * noOfDays;
+      const per_session_cost = total_cost / (number * day * noOfDays * session);
+
       return (
         <div>
           <div className="cost">
@@ -280,7 +281,7 @@ const CalculatorModule = () => {
     }
     if (expanded === "panel3") {
       const total_premisses_cost = 0.01 * number * session * noOfDays;
-      const per_session_cost = 0.01 * 1 * session * noOfDays;
+      const per_session_cost = total_premisses_cost / (number * day * noOfDays);
       return (
         <div>
           <div className="cost">
