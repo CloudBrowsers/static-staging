@@ -54,6 +54,13 @@
 .MuiFormControl-root {
   margin-top: 10px !important;
 }
+.total_cost {
+  color: #b5b7b9;
+  font-size: 12px;
+  position: relative;
+  top: 5px;
+}
+
 @media screen and (max-width: 850px) {
   .sub-heading-text {
     margin-top: 20px;

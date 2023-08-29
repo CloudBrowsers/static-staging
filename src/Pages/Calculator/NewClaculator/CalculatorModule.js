@@ -207,33 +207,117 @@ const CalculatorModule = () => {
         onPremisis: false,
       });
       dispatch(setNoOfDays(0));
-      // setNumberOfDays(0);
 
       return 0;
     }
     if (expanded === "panel1") {
       const total_montly_cost = 40 * number;
-      return total_montly_cost;
+      const per_session_cost = 40 / 1;
+      return (
+        <div>
+          <div className="cost">
+            $ <span>{per_session_cost.toFixed(2)}</span>
+          </div>
+          <div className="total_cost">
+            <div className="per_session">
+              Total Cost
+              <span
+                style={{
+                  color: "white",
+                  fontSize: "15px",
+                  marginLeft: "3px",
+                }}
+              >
+                <span
+                  style={{
+                    color: "#69d5ab",
+                    fontSize: "15px",
+                    marginRight: "3px",
+                  }}
+                >
+                  $
+                </span>
+                {total_montly_cost.toFixed(2)}
+              </span>
+            </div>
+          </div>
+        </div>
+      );
     }
     if (expanded === "panel2") {
-      const total_cost = 100 + number * session * day * noOfDays * 0.02;
-      return total_cost;
+      const total_cost = 100 + 0.2 * number * session * day * noOfDays;
+      const per_session_cost = 100 + 0.2 * 1 * session * day * noOfDays;
+      return (
+        <div>
+          <div className="cost">
+            $ <span>{per_session_cost.toFixed(2)}</span>
+          </div>
+          <div className="total_cost">
+            <div className="per_session">
+              Total Cost
+              <span
+                style={{
+                  color: "white",
+                  fontSize: "15px",
+                  marginLeft: "3px",
+                }}
+              >
+                <span
+                  style={{
+                    color: "#69d5ab",
+                    fontSize: "15px",
+                    marginRight: "3px",
+                  }}
+                >
+                  $
+                </span>
+                {total_cost.toFixed(2)}
+              </span>
+            </div>
+          </div>
+        </div>
+      );
     }
     if (expanded === "panel3") {
-      const total_premisses_cost = session * day * noOfDays * 0.01;
-
+      const total_premisses_cost = 0.01 * number * session * noOfDays;
+      const per_session_cost = 0.01 * 1 * session * noOfDays;
       return (
-        <span>
-          {total_premisses_cost}
-          <p
-            style={{
-              fontSize: "12px",
-              posiion: "relative",
-              top: "0px",
-              color: "#b5b7b9",
-            }}
-          >{`+ Orgnization Infrastructure Cost + IT Maintenence Cost`}</p>
-        </span>
+        <div>
+          <div className="cost">
+            $ <span>{per_session_cost.toFixed(2)}</span>
+          </div>
+          <span style={{ fontSize: "15px" }}>
+            <div className="total_cost">
+              Total Cost
+              <span
+                style={{
+                  color: "#69d5ab",
+                  fontSize: "15px",
+                  marginLeft: "12px",
+                  marginRight: "3px",
+                }}
+              >
+                $
+              </span>
+              <span
+                style={{
+                  color: "white",
+                  fontSize: "15px",
+                }}
+              >
+                {total_premisses_cost.toFixed(2)}
+              </span>
+            </div>
+            <p
+              style={{
+                fontSize: "12px",
+                posiion: "relative",
+                top: "0px",
+                color: "#b5b7b9",
+              }}
+            >{`+ Orgnization Infrastructure Cost + IT Maintenence Cost`}</p>
+          </span>
+        </div>
       );
     }
 
@@ -305,77 +389,6 @@ const CalculatorModule = () => {
           <Grid className="choose-plan-box">
             <ChoosePlan />
           </Grid>
-          {/* <Grid className="choose-plan-section-box">
-            <Box
-              className={
-                selectPlan.monthly ? "selected-box" : "montly-section-box"
-              }
-            >
-              <Box>Monthly</Box>
-              <FormGroup>
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      {...label}
-                      checked={selectPlan.monthly}
-                      onChange={handleChange}
-                      name="monthly"
-                      className={
-                        selectPlan.monthly ? "checkbox" : "checkbox-before"
-                      }
-                    />
-                  }
-                />
-              </FormGroup>
-            </Box>
-            {renderNumberOfDays(monthly)}
-            <Box
-              className={
-                selectPlan.payAsYouGo ? "selected-box" : "pay-section-box"
-              }
-            >
-              <Box>Pay-as-you-go</Box>
-              <FormGroup>
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      {...label}
-                      checked={selectPlan.payAsYouGo}
-                      onChange={handleChange}
-                      name="payAsYouGo"
-                      className={
-                        selectPlan.payAsYouGo ? "checkbox" : "checkbox-before"
-                      }
-                    />
-                  }
-                />
-              </FormGroup>
-            </Box>
-            {renderNumberOfDays(payAsYouGo)}
-            <Box
-              className={
-                selectPlan.onPremisis ? "selected-box" : "pay-section-box"
-              }
-            >
-              <Box>On-Premise</Box>
-              <FormGroup>
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      {...label}
-                      checked={selectPlan.onPremisis}
-                      onChange={handleChange}
-                      name="onPremisis"
-                      className={
-                        selectPlan.onPremisis ? "checkbox" : "checkbox-before"
-                      }
-                    />
-                  }
-                />
-              </FormGroup>
-            </Box>
-            {renderNumberOfDays(onPremisis)}
-          </Grid> */}
           {/* Range Section  */}
           <Grid
             container
@@ -394,41 +407,8 @@ const CalculatorModule = () => {
                 fullWidth
                 sx={{ input: { color: "white " } }}
               />
-              {/* <Box className="text">Number Of Parallel Session</Box> */}
-              {/* <Box>
-                <Box className="enter-manually-section-box">
-                  <Box className="no-box">No.</Box>
-                  <Box className="manually-text-box">Enter manually</Box>
-                </Box>
-                <TextField
-                  sx={{ background: "white !important", borderRadius: "5px" }}
-                  className="textField-box"
-                  size="small"
-                  fullWidth
-                  type={"number"}
-                  value={sliderValues.number}
-                  onChange={handleInputChange("number")}
-                  InputProps={{
-                    sx: {
-                      paddingTop: "3px",
-                    },
-                  }}
-                />
-              </Box> */}
+
               <Box className="isoSlider-box">
-                {/* <IOSSlider
-                  aria-label="ios slider"
-                  // defaultValue={0}
-                  name="number"
-                  value={sliderValues.number}
-                  onChange={handleSliderInputChange("number")}
-                  marks={marks}
-                  sx={{ marginTop: "30px" }}
-                  valueLabelDisplay="on"
-                  step={1}
-                  min={0}
-                  max={2000}
-                /> */}
                 <SliderComponent
                   value={number}
                   handleSliderInputChange={handleSliderInputChange("number")}
@@ -448,46 +428,13 @@ const CalculatorModule = () => {
                 className="textField-calculator"
                 type="number"
                 value={sliderValues.day}
-                // className="textfield"
                 onChange={handleInputChange("day")}
                 name="noOfDays"
                 fullWidth
                 sx={{ input: { color: "white" } }}
               />
-              {/*  */}
-              {/* <Box className="text">Number Of Iterations Per Day</Box>
-              <Box>
-                <Box className="enter-manually-section-box">
-                  <Box className="no-box">No.</Box>
-                  <Box className="manually-text-box">Enter manually</Box>
-                </Box>
-                <TextField
-                  sx={{ background: "white !important", borderRadius: "5px" }}
-                  className="textField-box"
-                  size="small"
-                  fullWidth
-                  type={"number"}
-                  value={sliderValues.day}
-                  onChange={handleInputChange("day")}
-                  InputProps={{
-                    sx: {
-                      paddingTop: "3px",
-                    },
-                  }}
-                />
-              </Box> */}
+
               <Box className="isoSlider-box">
-                {/* <IOSSlider
-                  aria-label="ios slider"
-                  // defaultValue={0}
-                  name="day"
-                  value={sliderValues.day}
-                  onChange={handleSliderInputChange("day")}
-                  marks={marks}
-                  sx={{ marginTop: "30px" }}
-                  valueLabelDisplay="on"
-                  max={50}
-                /> */}
                 <SliderComponent
                   value={day}
                   handleSliderInputChange={handleSliderInputChange("day")}
@@ -503,28 +450,6 @@ const CalculatorModule = () => {
               </Box>
               {/* Average */}
 
-              {/*  */}
-              {/* <Box className="text">Average Session Duration</Box>
-              <Box>
-                <Box className="enter-manually-section-box">
-                  <Box className="no-box">No.</Box>
-                  <Box className="manually-text-box">Enter manually</Box>
-                </Box>
-                <TextField
-                  style={{ background: "white", borderRadius: "5px" }}
-                  className="textField-box"
-                  size="small"
-                  type={"number"}
-                  fullWidth
-                  value={sliderValues.session}
-                  onChange={handleInputChange("session")}
-                  InputProps={{
-                    sx: {
-                      paddingTop: "3px",
-                    },
-                  }}
-                />
-              </Box> */}
               <TextField
                 label={"Average Session Duration"}
                 className="textField-calculator"
@@ -536,16 +461,6 @@ const CalculatorModule = () => {
                 sx={{ input: { color: "white" } }}
               />
               <Box className="isoSlider-box">
-                {/* <IOSSlider
-                  aria-label="ios slider"
-                  name="number"
-                  value={sliderValues.session}
-                  onChange={handleSliderInputChange("session")}
-                  marks={marks}
-                  sx={{ marginTop: "30px" }}
-                  valueLabelDisplay="on"
-                  max={24}
-                /> */}
                 <SliderComponent
                   value={session}
                   handleSliderInputChange={handleSliderInputChange("session")}
@@ -584,12 +499,12 @@ const CalculatorModule = () => {
               </Box>
               {/* Count-session */}
               <Box className="total-cost">
-                <Box>Total Cost</Box>
+                <Box>Cost per session</Box>
                 {!expanded && (
                   <Box color={"red"}>Please select plan to know your cost</Box>
                 )}
                 <Box className="cost">
-                  $ <span>{totalCost()}</span>
+                  <span>{totalCost()}</span>
                 </Box>
                 <Divider className="divider" />
                 <Box className="count-section">
