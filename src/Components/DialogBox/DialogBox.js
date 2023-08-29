@@ -207,6 +207,32 @@ const DialogBox = ({ isActive }) => {
                 }
               />
             </Grid>
+            <Grid item xs={12} sm={12}>
+              <TextField
+                style={{
+                  margin: "10px 0",
+                }}
+                id="org_name"
+                value={trialData.org_name}
+                onChange={changeTrialData}
+                label={<Label text={"Domain Name"} important={true} />}
+                variant="outlined"
+                className="textField InputName"
+                type="text"
+                fullWidth
+                InputProps={{
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      .cloudifytests.com
+                    </InputAdornment>
+                  ),
+                }}
+                error={error && !trialData.org_name}
+                helperText={
+                  error && !trialData.org_name && "Please enter domain name"
+                }
+              />
+            </Grid>
             <Grid item xs={12} sm={6}>
               <TextField
                 style={{
@@ -265,32 +291,7 @@ const DialogBox = ({ isActive }) => {
                 </Select>
               </FormControl>
             </Grid>
-            <Grid item xs={12} sm={12}>
-              <TextField
-                style={{
-                  margin: "10px 0",
-                }}
-                id="org_name"
-                value={trialData.org_name}
-                onChange={changeTrialData}
-                label={<Label text={"Domain Name"} important={true} />}
-                variant="outlined"
-                className="textField InputName"
-                type="text"
-                fullWidth
-                InputProps={{
-                  endAdornment: (
-                    <InputAdornment position="end">
-                      .cloudifytests.com
-                    </InputAdornment>
-                  ),
-                }}
-                error={error && !trialData.org_name}
-                helperText={
-                  error && !trialData.org_name && "Please enter domain name"
-                }
-              />
-            </Grid>
+
             <Grid item xs={12}>
               <TextField
                 label={
