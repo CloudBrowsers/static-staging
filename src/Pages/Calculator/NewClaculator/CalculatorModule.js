@@ -280,7 +280,7 @@ const CalculatorModule = () => {
       );
     }
     if (expanded === "panel3") {
-      const total_premisses_cost = 0.01 * number * session * noOfDays;
+      const total_premisses_cost = 0.01 * number * day * noOfDays;
       const per_session_cost = total_premisses_cost / (number * day * noOfDays);
       return (
         <div>
