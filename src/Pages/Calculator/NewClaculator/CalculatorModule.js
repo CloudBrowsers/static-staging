@@ -392,7 +392,6 @@ const CalculatorModule = () => {
                 onChange={handleInputChange("number")}
                 name="noOfDays"
                 fullWidth
-                disabled={expanded === "panel1" ? true : false}
                 sx={{ input: { color: "white " } }}
               />
               {/* <Box className="text">Number Of Parallel Session</Box> */}
@@ -453,7 +452,6 @@ const CalculatorModule = () => {
                 onChange={handleInputChange("day")}
                 name="noOfDays"
                 fullWidth
-                disabled={expanded === "panel1" ? true : false}
                 sx={{ input: { color: "white" } }}
               />
               {/*  */}
@@ -535,7 +533,6 @@ const CalculatorModule = () => {
                 onChange={handleInputChange("session")}
                 name="noOfDays"
                 fullWidth
-                disabled={expanded === "panel1" ? true : false}
                 sx={{ input: { color: "white" } }}
               />
               <Box className="isoSlider-box">
