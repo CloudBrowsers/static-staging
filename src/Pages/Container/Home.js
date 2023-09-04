@@ -16,7 +16,7 @@ function Home() {
   return (
     <Box id="home" className="home_container">
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={6} className="left_section">
+        <Grid item xs={12} sm={5} className="left_section">
           <div>
             <div className="home_text">
               A CLOUD BASED
@@ -46,8 +46,22 @@ function Home() {
           </div>
         </Grid>
 
-        <Grid item xs={12} sm={6} className="right_section">
-          <img src={banner} alt="banner" className="img" />
+        <Grid item xs={12} sm={7} textAlign="center">
+          <video
+            className="img"
+            loop="true"
+            autoplay="autoplay"
+            controls="controls"
+            id="vid"
+            muted
+          >
+            <source
+              type="video/mp4"
+              src={
+                "https://ui-imagefile.s3.amazonaws.com/assets/cloudifytests_video.mp4"
+              }
+            ></source>
+          </video>
         </Grid>
       </Grid>
     </Box>
