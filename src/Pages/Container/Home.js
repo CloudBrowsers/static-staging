@@ -58,7 +58,7 @@ function Home() {
             <source
               type="video/mp4"
               src={
-                "https://ui-imagefile.s3.amazonaws.com/assets/cloudifytests_video.mp4"
+                "https://res.cloudinary.com/dsrutn5ee/video/upload/v1700033612/cloudifytests/cloudifytests_video.mp4"
               }
             ></source>
           </video>
